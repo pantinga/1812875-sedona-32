@@ -1,0 +1,9 @@
+body {
+    width: 1280px;
+    background-color: #f2f2f2;
+}
+
+.centring {
+    width: 1200px;
+    margin: 0 auto;
+}
