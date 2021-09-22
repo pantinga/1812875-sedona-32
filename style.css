@@ -11,3 +11,7 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
+
+.header-menu {
+    margin: 0;
+}
