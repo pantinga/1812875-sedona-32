@@ -31,3 +31,28 @@ body {
 .header-menu {
     margin: 0;
 }
+
+.header-logo {
+    background-image: url("images/vector.svg");
+}
+
+.header-bottom h1 {
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header-bottom p {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+    color: #333333;
+}
