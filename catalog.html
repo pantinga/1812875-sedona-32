@@ -20,19 +20,38 @@
       </nav>      
     </header>
     <main>
+      <h1 class="visually-hidden">Каталог</h1>
       <header class="catalog-head">        
         <img class="blur-back" src="" alt="Sedona blur background">
-        <h1 class="hotes">Гостиницы Седоны</h1>
-        <nav class="small-nav">
-          <a class="home-link" href="index.html"><ing src="" class="home" alt="На главную страницу"></a>
+        <h2 class="hotes">Гостиницы Седоны</h2>
+        <nav class="small-nav">          
+          <a class="home-link" href="index.html"><img class="home" src="" alt="На главную страницу"></a>
           <span>&gt</span>
-          <span>Гостиницы</span>
+          <span>Гостиницы</span>        
         </nav>
-        <form class="choice" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="choice" action="https://echo.htmlacademy.ru/" method="get">
           
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <button class="range-toggle toggle-min" type="button">
+              <span class="visually-hidden">минимальная цена</span>
+            </button>
+            <button class="range-toggle toggle-max" type="button">
+              <span class="visually-hidden">максимальная цена</span>
+            </button>
+
+            <label class="catalog-filter-label">
+              от <input class="catalog-filter-input" type="number" name="min-price" value=0> ₽
+            </label>
+
+            <label class="catalog-filter-label">
+              до <input class="catalog-filter-input" type="number" name="max-price" value=9000> ₽
+            </label>
+
+          </fieldset>
+
 
         </form>
-
       </header>
     </main>
   </body>
