@@ -1,62 +1,73 @@
 @font-face {
     font-family: "PT Sans";
-    src: url("/fonts/ptsans-400.woff2") format("woff2");
-    font-weight: 400;
     font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
 }
-   
+
 @font-face {
     font-family: "PT Sans";
-    src: url("/fonts/ptsans-700.woff2") format("woff2");
-    font-weight: 700;
     font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 1280px;
-    background-color: #f2f2f2;
-}
-
-.centring {
-    width: 1200px;
-    margin: 0 auto;
-    background: #FFFFFF;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-.header-menu {
-    margin: 0;
-}
-
-.header-logo {
-    
-    background-image: url("/images/vector.svg");
-    
-    z-index: 1;
-    
-}
-
-.header-bottom h1 {
     font-family: "PT Sans", sans-serif;
-    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #ffffff;
+    color: #333333;    
+}
+
+.main-header {
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.navigation-list {
+    list-style: none;
+}
+
+.navigation-link {
+    text-decoration: none;
+}
+
+.logo-sedona-background {
+    background-image: url(../img/photos/main-background.jpg);
+    width: 1200px;
+    height: 485px;
+    background-repeat: no-repeat;    
+}
+
+.advantages-list {
+    text-align: center;
+    list-style: none;
+}
+
+.advantages-title {
+    font-family: PT Sans;
     font-style: normal;
+    font-weight: bold;
     font-size: 30px;
     line-height: 36px;
-    text-align: center;
     text-transform: uppercase;
     color: #000000;
+    background-color: inherit;
 }
 
-.header-bottom p {
-    font-family: "PT Sans", sans-serif;
+.advantages-texts {
+    font-family: PT Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 22px;
     line-height: 36px;
     text-align: center;
-    color: #333333;
+    color: inherit;
+    background-color: inherit;
 }
