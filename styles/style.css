@@ -45,29 +45,89 @@ body {
     background-repeat: no-repeat;    
 }
 
+.advantages-info {
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+    color: inherit;
+    background-color: inherit;
+}
+
+.advantages-title {        
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.advantages-texts {    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;    
+}
+
 .advantages-list {
     text-align: center;
     list-style: none;
 }
 
-.advantages-title {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: inherit;
+.blue {
+    background-color: #83B3D3;
+    color: #ffffff;
 }
 
-.advantages-texts {
-    font-family: PT Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 36px;
-    text-align: center;
-    color: inherit;
-    background-color: inherit;
+.blue .advantages-title {
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 28px;
 }
+
+.list-info {    
+    list-style: none;
+}
+
+.blue-white-white {   
+    background-color: rgba(131, 179, 211, 0.1);
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.text-advantages-title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.text-advantages-description {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #333333;
+}
+
+.blue-white {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.blue-white-white .advantages-title,
+.blue-white .advantages-title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+} 
