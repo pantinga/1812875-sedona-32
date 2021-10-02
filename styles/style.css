@@ -130,4 +130,114 @@ body {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
-} 
+}
+
+.hotel {
+    text-align: center;
+}
+
+.hotel-title {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;    
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.hotel-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.hotel-link {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #756257;
+}
+
+.subscription {
+    text-align: center;
+    color: #ffffff;
+    background-image: url(../img/photos/blur-background.jpg);
+    width: 1200px;
+    height: 411px;
+    background-repeat: no-repeat;
+}
+
+.subscription-head {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscription-info {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subscription-field {    
+    float: left;   
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    width: 600px;
+    height: 58px;
+    color: rgb(0, 0, 0, 0.6);
+    background-color: #f2f2f2;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+    margin-left: 200px;
+    padding-left: 22px;    
+}
+
+/*указать область ввода текста емаил 559*60*/
+
+.subscription-btn {
+    float: left;
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: #83B3D3;
+    width: 200px;
+    height: 60px;
+    border-radius: 0 10px 10px 0;
+    border: 0;    
+}
+
+.footer-social-link {
+    list-style: none;
+}
+
+.telephone {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
