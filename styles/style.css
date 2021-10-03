@@ -85,14 +85,36 @@ body {
 
 .list-info {    
     list-style: none;
-}
-
-.blue-white-white {   
-    background-color: rgba(131, 179, 211, 0.1);
-}
-
-.white {
     background-color: #ffffff;
+}
+
+.text-advantages-item:nth-child(1) {    
+    background: url(../img/logos/logo-home.svg) no-repeat 200% 200%;
+    qbackground-repeat: no-repeat;
+    background-position: center;
+    /*width: 72px;
+    height: 75px;*/
+}
+
+.text-advantages-item:nth-child(2) {    
+    background-image: url(../img/logos/logo-burger.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*width: 74px;
+    height: 70px;*/
+}
+
+.text-advantages-item:nth-child(3) {    
+    background-image: url(../img/logos/logo-souvenir.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: ;
+    /*width: 64px;
+    height: 76px;*/
+}
+
+.blue-white-white {    
+    background-color: rgba(131, 179, 211, 0.1);
 }
 
 .text-advantages-title {
