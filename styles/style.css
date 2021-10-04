@@ -113,25 +113,28 @@ body {
     background-color: rgba(131, 179, 211, 0.1);
 }
 
-.text-advantages-item:nth-of-type(1) .input-logo {
+.text-advantages-item:nth-of-type(1) {
     background-image: url(../img/logos/logo-home.svg);
-    background-repeat: no-repeat;
-    width: 75px;
-    height: 72px;    
+    background-repeat: no-repeat;    
+    /*width: 75px;
+    height: 72px;*/    
 }
 
-.text-advantages-item:nth-of-type(2) .input-logo {
+.text-advantages-item:nth-of-type(2) {
     background-image: url(../img/logos/logo-burger.svg);
     background-repeat: no-repeat;
-    width: 74px;
-    height: 70px;    
+    background-position-x: 100px;
+    background-position-y: 10px;
+
+    /*width: 74px;
+    height: 70px;*/    
 }
 
-.text-advantages-item:nth-of-type(3) .input-logo {
+.text-advantages-item:nth-of-type(3) {
     background-image: url(../img/logos/logo-souvenir.svg);
     background-repeat: no-repeat;
-    width: 64px;
-    height: 76px;    
+    /*width: 64px;
+    height: 76px;*/  
 }
 
 .text-advantages-title {
