@@ -91,12 +91,20 @@ body {
     text-align: center;
 }
 
+.advantages-title-info {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+ }
+
 .big-item-picture {
     background-color: rgb(131, 179, 211);
     color: #ffffff;
 }
 
-.big-item-picture > .advantages-title {
+.big-item-picture > .advantages-title-info {
     color: #ffffff;
 }
 
@@ -110,25 +118,24 @@ body {
 }
 
 .dark {
-    background-color: rgba(131, 179, 211, 0.2);
-    
+    background-color: rgba(131, 179, 211, 0.2);    
 }
 
-/*
-.text-advantages-item:nth-of-type(1) {
+
+.list-info .advantages-item:nth-child(1) {
     background-image: url(../img/logos/logo-home.svg);
+    background-repeat: no-repeat;    
+}
+
+.list-info .advantages-item:nth-child(2) {
+    background-image: url(../img/logos/logo-burger.svg);
     background-repeat: no-repeat;
 }
 
-.text-advantages-item:nth-of-type(2) {
-    background-image: url(../img/logos/logo-burger.svg);
-    background-repeat: no-repeat;     
-}
-
-.text-advantages-item:nth-of-type(3) {
+.list-info .advantages-item:nth-child(3) {
     background-image: url(../img/logos/logo-souvenir.svg);
     background-repeat: no-repeat;
-}*/
+}
 
 .hotel {
     text-align: center;
