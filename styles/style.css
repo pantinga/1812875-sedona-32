@@ -69,8 +69,6 @@ body {
 .advantages-info {
     font-family: "PT Sans", sans-serif;
     text-align: center;
-    color: inherit;
-    background-color: inherit;
 }
 
 .advantages-title {        
@@ -88,31 +86,35 @@ body {
     line-height: 36px;    
 }
 
-.advantages-list {
+/*центрует текст в блоках*/
+.advantages-item {
     text-align: center;
-    list-style: none;
 }
 
-.blue {
-    background-color: #83B3D3;
+.big-item-picture {
+    background-color: rgb(131, 179, 211);
     color: #ffffff;
 }
 
-.blue .advantages-title {
+.big-item-picture > .advantages-title {
     color: #ffffff;
-    font-size: 24px;
-    line-height: 28px;
 }
 
 .list-info {    
-    list-style: none;
     background-color: #ffffff;
+    color: #333333;
 }
 
-.blue-white-white {    
-    background-color: rgba(131, 179, 211, 0.1);
+.light {
+    background-color: rgba(131, 179, 211, 0.1);    
 }
 
+.dark {
+    background-color: rgba(131, 179, 211, 0.2);
+    
+}
+
+/*
 .text-advantages-item:nth-of-type(1) {
     background-image: url(../img/logos/logo-home.svg);
     background-repeat: no-repeat;
@@ -126,44 +128,7 @@ body {
 .text-advantages-item:nth-of-type(3) {
     background-image: url(../img/logos/logo-souvenir.svg);
     background-repeat: no-repeat;
-}
-
-.text-advantages-title {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-}
-
-.text-advantages-description {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    color: #333333;
-}
-
-.blue-white {
-    background-color: rgba(131, 179, 211, 0.2);
-}
-
-.blue-white-white .advantages-title,
-.blue-white .advantages-title {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-}
+}*/
 
 .hotel {
     text-align: center;
@@ -242,7 +207,7 @@ body {
     padding-left: 22px;    
 }
 
-/*указать область ввода текста емаил 559*60*/
+/*указать область ввода текста email 559*60*/
 
 .subscription-btn {
     float: left;
@@ -276,6 +241,10 @@ body {
     background-repeat: no-repeat;
 }
 
+/*удаление меток у списков*/
+
+.advantages-list,
+.list-info,
 .catalog-filter-list,
 .btn-show-card,
 .breadcrumbs,
@@ -284,4 +253,26 @@ body {
 .pagination,
 .footer-social-link {
     list-style: none;
+}
+
+/*Добавление картинок соц сетей */
+
+.footer-social-item:nth-of-type(1) {
+    background-image: url(../img/logos/logo-twitter.svg);
+    background-repeat: no-repeat;   
+}
+
+.footer-social-item:nth-of-type(2) {
+    background-image: url(../img/logos/logo-facebook.svg);
+    background-repeat: no-repeat;   
+}
+
+.footer-social-item:nth-of-type(3) {
+    background-image: url(../img/logos/logo-youtube.svg);
+    background-repeat: no-repeat;   
+}
+
+.htmlacademy-link {
+    background-image: url(../img/logos/logo-htmlacademy.svg);
+    background-repeat: no-repeat;
 }
