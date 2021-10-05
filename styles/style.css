@@ -59,7 +59,7 @@ body {
     background-color: #756257;
 }
 
-.logo-sedona-background {
+.background-main {
     background-image: url(../img/photos/main-background.jpg);
     width: 1200px;
     height: 485px;
@@ -115,26 +115,17 @@ body {
 
 .text-advantages-item:nth-of-type(1) {
     background-image: url(../img/logos/logo-home.svg);
-    background-repeat: no-repeat;    
-    /*width: 75px;
-    height: 72px;*/    
+    background-repeat: no-repeat;
 }
 
 .text-advantages-item:nth-of-type(2) {
     background-image: url(../img/logos/logo-burger.svg);
-    background-repeat: no-repeat;
-    background-position-x: 100px;
-    background-position-y: 10px;
-
-    /*width: 74px;
-    height: 70px;*/    
+    background-repeat: no-repeat;     
 }
 
 .text-advantages-item:nth-of-type(3) {
     background-image: url(../img/logos/logo-souvenir.svg);
     background-repeat: no-repeat;
-    /*width: 64px;
-    height: 76px;*/  
 }
 
 .text-advantages-title {
@@ -269,10 +260,6 @@ body {
     border: 0;    
 }
 
-.footer-social-link {
-    list-style: none;
-}
-
 .telephone {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -282,4 +269,19 @@ body {
     text-align: center;
     color: #000000;
     text-decoration: none;
+}
+
+.subscription-bg {
+    background-image: url(../img/photos/blur-background.jpg);
+    background-repeat: no-repeat;
+}
+
+.catalog-filter-list,
+.btn-show-card,
+.breadcrumbs,
+.hotel-list,
+.hotel-type,
+.pagination,
+.footer-social-link {
+    list-style: none;
 }
