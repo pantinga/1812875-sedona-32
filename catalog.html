@@ -7,7 +7,7 @@
   </head>
   <body>
 
-<!--шапка-->
+<!--Шапка-->
 
     <header class="main-header">
       <nav class="navigation">
@@ -25,7 +25,7 @@
       </nav>      
     </header>
 
-<!--главный заголовок-->  
+<!--Заглавный блок-->  
 
     <main class="main-catalog">
       <h1 class="visually-hidden">Каталог</h1>
@@ -36,7 +36,7 @@
             <li><a class="hotels-link">Гостиницы</a></li>
           </ul>
 
-<!--форма-->          
+<!--Форма выбора гостиниц-->          
 
         <form class="choice" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group">
@@ -205,8 +205,11 @@
           </li>
         </ul>
         <button class="show-more" type="button">Загрузить еще</button>
-        <div>
-          <ul class="pagination">          
+
+<!--Кнопки пролистывания-->
+
+        <div class="pagination">
+          <ul class="pagination-list">          
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
             </li>
@@ -227,6 +230,9 @@
             </li>          
           </ul>
           <p class="on-page">Гостиниц на странице:</p>
+
+<!--Кнопка подписаться-->
+
           <form class="quantity-type">
             <label class="visually-hidden" for="quantity">Количество</label>
             <select class="quantity-choose" id="quantity" name="quantity">
