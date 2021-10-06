@@ -334,6 +334,33 @@ body {
     line-height: 23px;
 }
 
+.hotel-find {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.select-control {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+    color: #333333;
+    width: 287px;
+    height: 48px;
+}
+
+.hotel-card-title {
+    text-transform: capitalize;
+}
+
 .footer-social-item:nth-of-type(1) {
     background-image: url(../img/logos/logo-twitter.svg);
     background-repeat: no-repeat;   
