@@ -264,6 +264,28 @@ body {
 
 /*Добавление картинок соц сетей */
 
+.hotels,
+.breadcrumbs,
+.choice {
+    color: #ffffff;
+}
+
+.hotels {
+    font-family: "PT Sans", sans-serif;    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    border: 1px solid yellow;
+}
+
+.breadcrumbs {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
 .footer-social-item:nth-of-type(1) {
     background-image: url(../img/logos/logo-twitter.svg);
     background-repeat: no-repeat;   
