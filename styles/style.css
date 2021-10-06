@@ -159,18 +159,6 @@ body {
     line-height: 26px;
 }
 
-.hotel-link {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #756257;
-}
-
 .subscription {
     text-align: center;
     color: #ffffff;    
@@ -260,7 +248,7 @@ body {
 .breadcrumbs,
 .hotel-list,
 .hotel-type,
-.pagination,
+.pagination-list,
 .footer-social-link {
     list-style: none;
 }
@@ -334,6 +322,21 @@ body {
     line-height: 23px;
 }
 
+.btn-show-card-item:nth-child(1) {
+    background-image: url(../img/icons/mode-tile.svg);
+    background-repeat: no-repeat;
+}
+
+.btn-show-card-item:nth-child(2) {
+    background-image: url(../img/icons/mode-slideshow.svg);
+    background-repeat: no-repeat;
+}
+
+.btn-show-card-item:nth-child(3) {
+    background-image: url(../img/icons/mode-list.svg);
+    background-repeat: no-repeat;
+}
+
 .hotel-find {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -357,9 +360,132 @@ body {
     height: 48px;
 }
 
-.hotel-card-title {
+
+/*ссылка отеля внутри заголовка*/
+.hotel-link {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
     text-transform: capitalize;
+    text-decoration: none;
 }
+
+.hotel-type {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+
+/*ссылка отеля - подробнее*/
+.hotel-card-button {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #756257;
+    border: 0;
+    width: 151px;
+    height: 37px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.favouries {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #83b3d3;
+    border: 0;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;    
+}
+
+.rating-text {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+.show-more {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 625px;
+    height: 55px;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    border: 0;
+}
+
+.pagination-item {
+    width: 55px;
+    height: 55px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    align-items: center;
+    text-align: center;   
+    background-color: #83B3D3;
+    border-radius: 4px;
+}
+
+.pagination-item:nth-child(1) {
+    background-color: #f2f2f2;
+}
+
+.pagination-link {
+    text-decoration: none; 
+    color: #ffffff;
+}
+
+.on-page {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+.quantity-type {
+    width: 160px;
+    height: 48px;
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+}
+
+
 
 .footer-social-item:nth-of-type(1) {
     background-image: url(../img/logos/logo-twitter.svg);
