@@ -55,6 +55,7 @@ body {
     color: #ffffff;
     width: 160px;
     height: 37px;
+    padding: 8px 35px 9px 34px;
     border-radius: 4px;
     background-color: #756257;
 }
@@ -121,7 +122,6 @@ body {
     background-color: rgba(131, 179, 211, 0.2);    
 }
 
-
 .list-info .advantages-item:nth-child(1) {
     background-image: url(../img/logos/logo-home.svg);
     background-repeat: no-repeat;    
@@ -157,6 +157,21 @@ body {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+}
+
+.catalog-hotel-link {
+    font-family: "PT Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+    padding: 17px 130px 17px 130px;
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #756257;
+    border-radius: 4px;
 }
 
 .subscription {
@@ -360,7 +375,6 @@ body {
     height: 48px;
 }
 
-
 /*ссылка отеля внутри заголовка*/
 .hotel-link {
     font-family: "PT Sans", sans-serif;
@@ -394,8 +408,7 @@ body {
     color: #ffffff;
     background-color: #756257;
     border: 0;
-    width: 151px;
-    height: 37px;
+    padding: 8px 32px 9px 31px;
     border-radius: 4px;
     text-decoration: none;
 }
@@ -414,6 +427,10 @@ body {
     width: 160px;
     height: 37px;
     border-radius: 4px;    
+}
+
+.favouries.green {
+    background-color: #7DB54F;
 }
 
 .rating-text {
@@ -470,6 +487,10 @@ body {
     color: #ffffff;
 }
 
+.pagination-link.current {
+    color: #000000;
+}
+
 .on-page {
     font-family: "PT Sans", sans-serif;
     font-style: normal;
@@ -485,7 +506,13 @@ body {
     border-radius: 4px;
 }
 
+.subscription > .black {
+    color: #000000;
+}
 
+.subscription > .brown {
+    color: #333333;
+}
 
 .footer-social-item:nth-of-type(1) {
     background-image: url(../img/logos/logo-twitter.svg);
