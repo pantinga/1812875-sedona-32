@@ -383,7 +383,7 @@ body {
     font-size: 24px;
     line-height: 31px;
     color: #000000;
-    text-transform: capitalize;
+    /*text-transform: capitalize;*/
     text-decoration: none;
 }
 
@@ -514,17 +514,17 @@ body {
     color: #333333;
 }
 
-.footer-social-item:nth-of-type(1) {
+.footer-social-item-twitter {
     background-image: url(../img/logos/logo-twitter.svg);
     background-repeat: no-repeat;   
 }
 
-.footer-social-item:nth-of-type(2) {
+.footer-social-item-facebook {
     background-image: url(../img/logos/logo-facebook.svg);
     background-repeat: no-repeat;   
 }
 
-.footer-social-item:nth-of-type(3) {
+.footer-social-item-youtube {
     background-image: url(../img/logos/logo-youtube.svg);
     background-repeat: no-repeat;   
 }
