@@ -29,32 +29,35 @@ body {
     line-height: 26px;
 }
 
-.navigation-list {
+/*удаление меток у всех списков*/
+
+.navigation-list,
+.advantages-list,
+.list-info,
+.catalog-filter-list,
+.btn-show-card,
+.breadcrumbs,
+.hotel-list,
+.hotel-type,
+.pagination-list,
+.footer-social-link {
     list-style: none;
 }
 
 .navigation-link {
     text-decoration: none;
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     color: #000000;
 }
 
-.btn-want {   
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
+.btn-want {
     font-weight: 700;
-    font-style: normal;
     font-size: 16px;
     line-height: 21px;
-    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    width: 160px;
-    height: 37px;
     padding: 8px 35px 9px 34px;
     border-radius: 4px;
     background-color: #756257;
@@ -68,7 +71,6 @@ body {
 }
 
 .advantages-info {
-    font-family: "PT Sans", sans-serif;
     text-align: center;
 }
 
@@ -80,8 +82,7 @@ body {
     color: #000000;
 }
 
-.advantages-texts {    
-    font-style: normal;
+.advantages-texts {
     font-weight: 400;
     font-size: 22px;
     line-height: 36px;    
@@ -93,7 +94,6 @@ body {
 }
 
 .advantages-title-info {
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -142,8 +142,6 @@ body {
 }
 
 .hotel-title {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;    
@@ -152,22 +150,17 @@ body {
 }
 
 .hotel-text {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
 }
 
 .catalog-hotel-link {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
-    padding: 17px 130px 17px 130px;
-    text-align: center;
+    padding: 17px 130px 17px 130px;    
     color: #ffffff;
     text-decoration: none;
     background-color: #756257;
@@ -176,72 +169,8 @@ body {
 
 .subscription {
     text-align: center;
-    color: #ffffff;    
     width: 1200px;
     height: 411px;    
-}
-
-.subscription-head {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-
-.subscription-info {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-}
-
-.subscription-field {    
-    float: left;   
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    width: 600px;
-    height: 58px;
-    color: rgb(0, 0, 0, 0.6);
-    background-color: #f2f2f2;
-    border-radius: 10px 0 0 10px;
-    border: 0;
-    margin-left: 200px;
-    padding-left: 22px;    
-}
-
-/*указать область ввода текста email 559*60*/
-
-.subscription-btn {
-    float: left;
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #83B3D3;
-    width: 200px;
-    height: 60px;
-    border-radius: 0 10px 10px 0;
-    border: 0;    
-}
-
-.telephone {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-    color: #000000;
-    text-decoration: none;
 }
 
 .subscription-bg {
@@ -249,26 +178,63 @@ body {
     background-repeat: no-repeat;
 }
 
+.subscription-bg .subscription-head,
+.subscription-bg .subscription-info {
+    color: #ffffff;
+}
+
+.subscription-head {
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscription-info {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subscription-field {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(0, 0, 0, 0.6);
+    background-color: #f2f2f2;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+    padding-left: 22px;    
+}
+
+/*указать область ввода текста email 559*60*/
+
+.subscription-btn {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #83b3d3;
+    border-radius: 0 10px 10px 0;
+    border: 0;    
+}
+
+.telephone {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+
 .catalog-form-bg {
     background-image: url(../img/photos/catalog-background.jpg);
     background-repeat: no-repeat;
 }
-
-/*удаление меток у списков*/
-
-.advantages-list,
-.list-info,
-.catalog-filter-list,
-.btn-show-card,
-.breadcrumbs,
-.hotel-list,
-.hotel-type,
-.pagination-list,
-.footer-social-link {
-    list-style: none;
-}
-
-/*Добавление картинок соц сетей */
 
 .hotels,
 .breadcrumbs,
@@ -277,24 +243,18 @@ body {
 }
 
 .hotels {
-    font-family: "PT Sans", sans-serif;    
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
 }
 
 .breadcrumbs {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
 }
 
 .catalog-filter-title {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -305,13 +265,9 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    align-items: center;
-    text-align: center;
     text-transform: uppercase;
     background-color: #83B3D3;
     color: #ffffff;
-    width: 160px;
-    height: 48px;
     border: 0;
     border-radius: 4px;
 }
@@ -321,17 +277,12 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    text-align: center;
     color: #ffffff;
     background-color: transparent;
-    width: 160px;
-    height: 23px;
     border: 0;
 }
 
 .control-label {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -353,8 +304,6 @@ body {
 }
 
 .hotel-find {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 39px;
@@ -364,32 +313,24 @@ body {
 
 .select-control {
     font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     border: 2px solid #e5e5e5;
     border-radius: 4px;
     color: #333333;
-    width: 287px;
-    height: 48px;
 }
 
 /*ссылка отеля внутри заголовка*/
 .hotel-link {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
     color: #000000;
-    /*text-transform: capitalize;*/
     text-decoration: none;
 }
 
 .hotel-type {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -398,16 +339,12 @@ body {
 
 /*ссылка отеля - подробнее*/
 .hotel-card-button {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #756257;
-    border: 0;
     padding: 8px 32px 9px 31px;
     border-radius: 4px;
     text-decoration: none;
@@ -415,17 +352,13 @@ body {
 
 .favouries {
     font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
     background-color: #83b3d3;
     border: 0;
-    width: 160px;
-    height: 37px;
     border-radius: 4px;    
 }
 
@@ -434,12 +367,9 @@ body {
 }
 
 .rating-text {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    text-align: center;
     text-transform: uppercase;
     color: #333333;
     width: 160px;
@@ -450,30 +380,20 @@ body {
 
 .show-more {
     font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    align-items: center;
-    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    width: 625px;
-    height: 55px;
     background-color: #83B3D3;
     border-radius: 4px;
     border: 0;
 }
 
-.pagination-item {
-    width: 55px;
-    height: 55px;
-    font-style: normal;
+.pagination-item {    
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    align-items: center;
-    text-align: center;   
     background-color: #83B3D3;
     border-radius: 4px;
 }
@@ -492,27 +412,17 @@ body {
 }
 
 .on-page {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     color: #333333;
 }
 .quantity-type {
-    width: 160px;
-    height: 48px;
     border: 2px solid #E6E6E6;
     border-radius: 4px;
 }
 
-.subscription > .black {
-    color: #000000;
-}
-
-.subscription > .brown {
-    color: #333333;
-}
+/*Добавление картинок соц сетей */
 
 .footer-social-item-twitter {
     background-image: url(../img/logos/logo-twitter.svg);
