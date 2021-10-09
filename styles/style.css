@@ -166,7 +166,12 @@ body {
 
 .advantages-list > .big-item-picture {
     min-width: 800px;
-} 
+}
+
+.advantages-list > .advantages-item-triple {
+    min-width: 1200px;
+}
+
 /*лишнее правило
 .big-item-picture > .advantages-title-info {
     color: #ffffff;
