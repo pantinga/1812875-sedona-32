@@ -29,32 +29,36 @@ body {
     line-height: 26px;
 }
 
-.navigation-list {
+/*удаление меток у всех списков*/
+
+.navigation-list,
+.advantages-list,
+.list-info,
+.catalog-filter-list,
+.btn-show-card,
+.breadcrumbs,
+.hotel-list,
+.hotel-type,
+.pagination-list,
+.footer-social-link {
     list-style: none;
 }
 
 .navigation-link {
     text-decoration: none;
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
     color: #000000;
 }
 
-.btn-want {   
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
+.btn-want {
     font-weight: 700;
-    font-style: normal;
     font-size: 16px;
     line-height: 21px;
-    text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    width: 160px;
-    height: 37px;
+    padding: 8px 35px 9px 34px;
     border-radius: 4px;
     background-color: #756257;
 }
@@ -67,7 +71,6 @@ body {
 }
 
 .advantages-info {
-    font-family: "PT Sans", sans-serif;
     text-align: center;
 }
 
@@ -79,8 +82,7 @@ body {
     color: #000000;
 }
 
-.advantages-texts {    
-    font-style: normal;
+.advantages-texts {
     font-weight: 400;
     font-size: 22px;
     line-height: 36px;    
@@ -92,7 +94,6 @@ body {
 }
 
 .advantages-title-info {
-    font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -113,14 +114,13 @@ body {
     color: #333333;
 }
 
-.light {
+.advantages-item-light {
     background-color: rgba(131, 179, 211, 0.1);    
 }
 
-.dark {
+.advantages-item-dark {
     background-color: rgba(131, 179, 211, 0.2);    
 }
-
 
 .list-info .advantages-item:nth-child(1) {
     background-image: url(../img/logos/logo-home.svg);
@@ -142,8 +142,6 @@ body {
 }
 
 .hotel-title {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;    
@@ -152,95 +150,27 @@ body {
 }
 
 .hotel-text {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
 }
 
-.hotel-link {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
+.catalog-hotel-link {
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
-    text-decoration: none;
+    padding: 17px 130px 17px 130px;    
     color: #ffffff;
+    text-decoration: none;
     background-color: #756257;
+    border-radius: 4px;
 }
 
 .subscription {
     text-align: center;
-    color: #ffffff;
-    background-image: url(../img/photos/blur-background.jpg);
     width: 1200px;
-    height: 411px;
-    background-repeat: no-repeat;
-}
-
-.subscription-head {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
-    text-transform: uppercase;
-}
-
-.subscription-info {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-}
-
-.subscription-field {    
-    float: left;   
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    width: 600px;
-    height: 58px;
-    color: rgb(0, 0, 0, 0.6);
-    background-color: #f2f2f2;
-    border-radius: 10px 0 0 10px;
-    border: 0;
-    margin-left: 200px;
-    padding-left: 22px;    
-}
-
-/*указать область ввода текста email 559*60*/
-
-.subscription-btn {
-    float: left;
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background-color: #83B3D3;
-    width: 200px;
-    height: 60px;
-    border-radius: 0 10px 10px 0;
-    border: 0;    
-}
-
-.telephone {
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
-    text-align: center;
-    color: #000000;
-    text-decoration: none;
+    height: 411px;    
 }
 
 .subscription-bg {
@@ -248,21 +178,63 @@ body {
     background-repeat: no-repeat;
 }
 
-/*удаление меток у списков*/
-
-.advantages-list,
-.list-info,
-.catalog-filter-list,
-.btn-show-card,
-.breadcrumbs,
-.hotel-list,
-.hotel-type,
-.pagination,
-.footer-social-link {
-    list-style: none;
+.subscription-bg .subscription-head,
+.subscription-bg .subscription-info {
+    color: #ffffff;
 }
 
-/*Добавление картинок соц сетей */
+.subscription-head {
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.subscription-info {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.subscription-field {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(0, 0, 0, 0.6);
+    background-color: #f2f2f2;
+    border-radius: 10px 0 0 10px;
+    border: 0;
+    padding-left: 22px;    
+}
+
+/*указать область ввода текста email 559*60*/
+
+.subscription-btn {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #83b3d3;
+    border-radius: 0 10px 10px 0;
+    border: 0;    
+}
+
+.telephone {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.catalog-form-bg {
+    background-image: url(../img/photos/catalog-background.jpg);
+    background-repeat: no-repeat;
+}
 
 .hotels,
 .breadcrumbs,
@@ -271,32 +243,198 @@ body {
 }
 
 .hotels {
-    font-family: "PT Sans", sans-serif;    
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 78px;
-    border: 1px solid yellow;
 }
 
 .breadcrumbs {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
 }
 
-.footer-social-item:nth-of-type(1) {
+.catalog-filter-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.btn-show {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    background-color: #83B3D3;
+    color: #ffffff;
+    border: 0;
+    border-radius: 4px;
+}
+
+.btn-reset {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 0;
+}
+
+.control-label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.btn-show-card-item:nth-child(1) {
+    background-image: url(../img/icons/mode-tile.svg);
+    background-repeat: no-repeat;
+}
+
+.btn-show-card-item:nth-child(2) {
+    background-image: url(../img/icons/mode-slideshow.svg);
+    background-repeat: no-repeat;
+}
+
+.btn-show-card-item:nth-child(3) {
+    background-image: url(../img/icons/mode-list.svg);
+    background-repeat: no-repeat;
+}
+
+.hotel-find {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.select-control {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    border: 2px solid #e5e5e5;
+    border-radius: 4px;
+    color: #333333;
+}
+
+/*ссылка отеля внутри заголовка*/
+.hotel-link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.hotel-type {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+
+/*ссылка отеля - подробнее*/
+.hotel-card-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #756257;
+    padding: 8px 32px 9px 31px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.favouries {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #83b3d3;
+    border: 0;
+    border-radius: 4px;    
+}
+
+.favouries.green {
+    background-color: #7DB54F;
+}
+
+.rating-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #333333;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+}
+
+.show-more {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #83B3D3;
+    border-radius: 4px;
+    border: 0;
+}
+
+.pagination-item {    
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    background-color: #83B3D3;
+    border-radius: 4px;
+}
+
+.pagination-item:nth-child(1) {
+    background-color: #f2f2f2;
+}
+
+.pagination-link {
+    text-decoration: none; 
+    color: #ffffff;
+}
+
+.pagination-link.current {
+    color: #000000;
+}
+
+.on-page {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;
+}
+.quantity-type {
+    border: 2px solid #E6E6E6;
+    border-radius: 4px;
+}
+
+/*Добавление картинок соц сетей */
+
+.footer-social-item-twitter {
     background-image: url(../img/logos/logo-twitter.svg);
     background-repeat: no-repeat;   
 }
 
-.footer-social-item:nth-of-type(2) {
+.footer-social-item-facebook {
     background-image: url(../img/logos/logo-facebook.svg);
     background-repeat: no-repeat;   
 }
 
-.footer-social-item:nth-of-type(3) {
+.footer-social-item-youtube {
     background-image: url(../img/logos/logo-youtube.svg);
     background-repeat: no-repeat;   
 }
