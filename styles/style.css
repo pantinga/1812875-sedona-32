@@ -94,15 +94,11 @@ body {
 
 .main-container {
     flex-grow: 1;
-    outline: 5px solid rgba(78, 255, 231, 0.5);
-    outline-offset: -5px;
 }
 
 .page-container {
     width: 1200px;
     margin: 0 auto;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
 }
 
 .background-main {
@@ -135,12 +131,13 @@ body {
     line-height: 36px;    
 }
 
-/*центрует текст в блоках*/
+/*центрует текст в блоках и переносит новую строку*/
 .advantages-list {
     margin: 0;
     padding: 0;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .advantages-item {
@@ -162,6 +159,7 @@ body {
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    width: 400px;
 }
 
 .advantages-list > .big-item-picture {
@@ -172,25 +170,21 @@ body {
     min-width: 1200px;
 }
 
-/*лишнее правило
-.big-item-picture > .advantages-title-info {
-    color: #ffffff;
-}*/
-
 .list-info {
     padding: 0;
     display: flex;
     background-color: #ffffff;
     color: #333333;
-    /*flex-direction: row;*/
 }
 
 .advantages-item-light {
-    background-color: rgba(131, 179, 211, 0.1);    
+    background-color: rgba(131, 179, 211, 0.1);
+    width: 400px;
 }
 
 .advantages-item-dark {
-    background-color: rgba(131, 179, 211, 0.2);    
+    background-color: rgba(131, 179, 211, 0.2);
+    width: 400px;
 }
 
 .list-info .advantages-item:nth-child(1) {
@@ -491,6 +485,14 @@ body {
 .quantity-type {
     border: 2px solid #E6E6E6;
     border-radius: 4px;
+}
+
+.main-footer {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;    
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
 }
 
 /*Добавление картинок соц сетей */
