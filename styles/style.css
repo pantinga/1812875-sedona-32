@@ -14,12 +14,20 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+  
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     background-color: #ffffff;
-    color: #333333;    
+    color: #333333;
 }
 
 .main-header {
@@ -44,6 +52,27 @@ body {
     list-style: none;
 }
 
+.page-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 531px;
+}
+
+.navigation-user {
+    margin-left: auto;    
+}
+
 .navigation-link {
     text-decoration: none;
     font-weight: 700;
@@ -63,15 +92,33 @@ body {
     background-color: #756257;
 }
 
+.main-container {
+    flex-grow: 1;
+    outline: 5px solid rgba(78, 255, 231, 0.5);
+    outline-offset: -5px;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+
 .background-main {
     background-image: url(../img/photos/main-background.jpg);
-    width: 1200px;
-    height: 485px;
-    background-repeat: no-repeat;    
+    margin: 0 auto;
+    min-height: 485px;
+    background-repeat: no-repeat;
+}
+
+.logo-sedona {
+    display: block;
+    margin: 0 auto; 
 }
 
 .advantages-info {
-    text-align: center;
+    text-align: center;    
 }
 
 .advantages-title {        
@@ -89,8 +136,18 @@ body {
 }
 
 /*центрует текст в блоках*/
-.advantages-item {
+.advantages-list {
+    margin: 0;
+    padding: 0;
     text-align: center;
+    display: flex;
+}
+
+.advantages-item {
+    min-width: 400px;
+    padding: 0;
+    margin: 0;
+    height: 384px;
 }
 
 .advantages-title-info {
@@ -98,20 +155,29 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
- }
+}
 
-.big-item-picture {
+.advantages-list > .advantages-item-white {
     background-color: rgb(131, 179, 211);
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
 }
 
+.advantages-list > .big-item-picture {
+    min-width: 800px;
+} 
+/*лишнее правило
 .big-item-picture > .advantages-title-info {
     color: #ffffff;
-}
+}*/
 
-.list-info {    
+.list-info {
+    padding: 0;
+    display: flex;
     background-color: #ffffff;
     color: #333333;
+    /*flex-direction: row;*/
 }
 
 .advantages-item-light {
