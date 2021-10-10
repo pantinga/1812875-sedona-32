@@ -488,11 +488,19 @@ body {
 }
 
 .main-footer {
+    /*margin: 0;
+    padding: 0;*/
     display: flex;
     width: 1200px;
     margin: 0 auto;    
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
+}
+
+.footer-social {
+    margin-left: 72px;
+    margin: 0;
+    padding: 0;
 }
 
 /*Добавление картинок соц сетей */
@@ -504,7 +512,8 @@ body {
 
 .footer-social-item-facebook {
     background-image: url(../img/logos/logo-facebook.svg);
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    margin-left: 29px;
 }
 
 .footer-social-item-youtube {
@@ -516,3 +525,10 @@ body {
     background-image: url(../img/logos/logo-htmlacademy.svg);
     background-repeat: no-repeat;
 }
+
+.footer-social-link {
+    
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+
