@@ -48,7 +48,7 @@ body {
 .hotel-list,
 .hotel-type,
 .pagination-list,
-.footer-social-link {
+.footer-social-links {
     list-style: none;
 }
 
@@ -66,11 +66,29 @@ body {
 .navigation-list {
     margin: 0;
     padding: 0;
-    width: 531px;
+    /*width: 531px;*/
+    display: flex;
 }
 
+.navigation-main {
+    padding-left: 71px;
+}
+
+.navigation-main > .navigation-item {
+    padding-right: 33px;
+} 
+
 .navigation-user {
-    margin-left: auto;    
+    margin-left: auto;
+    margin-right: 72px;
+}
+
+.navigation-user > .navigation-item {
+    padding-left: 33px;    
+}
+
+.navigation-user > .navigation-item-favourites {
+    padding-left: 21px; 
 }
 
 .navigation-link {
@@ -114,7 +132,10 @@ body {
 }
 
 .advantages-info {
-    text-align: center;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;    
+    margin-left: 240px;  
 }
 
 .advantages-title {        
@@ -123,12 +144,14 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     color: #000000;
+    width: 720px;
 }
 
 .advantages-texts {
     font-weight: 400;
     font-size: 22px;
-    line-height: 36px;    
+    line-height: 36px;  
+    width: 720px;  
 }
 
 /*центрует текст в блоках и переносит новую строку*/
@@ -203,7 +226,9 @@ body {
 }
 
 .hotel {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;    
 }
 
 .hotel-title {
@@ -212,12 +237,18 @@ body {
     line-height: 36px;    
     text-transform: uppercase;
     color: #000000;
+    width: 720px;
+    margin-left: 240px;
+    text-align: center;
 }
 
 .hotel-text {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    width: 720px;
+    margin-left: 240px;
+    text-align: center;    
 }
 
 .catalog-hotel-link {
@@ -228,6 +259,8 @@ body {
     padding: 17px 130px 17px 130px;    
     color: #ffffff;
     text-decoration: none;
+    margin-left: 312px;
+    margin-right: 313px;
     background-color: #756257;
     border-radius: 4px;
 }
@@ -235,7 +268,9 @@ body {
 .subscription {
     text-align: center;
     width: 1200px;
-    height: 411px;    
+    height: 411px;
+    display: flex;
+    flex-direction: column;    
 }
 
 .subscription-bg {
@@ -254,15 +289,19 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    width: 720px;
+    margin-left: 240px;
 }
 
 .subscription-info {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
+    width: 720px;
+    margin-left: 240px;    
 }
 
-.subscription-field {
+.subscription-field {    
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -271,7 +310,7 @@ body {
     background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
     border: 0;
-    padding-left: 22px;    
+    padding-left: 22px;
 }
 
 /*указать область ввода текста email 559*60*/
@@ -288,7 +327,7 @@ body {
     border: 0;    
 }
 
-.telephone {
+.telephone-number {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
@@ -487,22 +526,6 @@ body {
     border-radius: 4px;
 }
 
-.main-footer {
-    /*margin: 0;
-    padding: 0;*/
-    display: flex;
-    width: 1200px;
-    margin: 0 auto;    
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
-}
-
-.footer-social {
-    margin-left: 72px;
-    margin: 0;
-    padding: 0;
-}
-
 /*Добавление картинок соц сетей */
 
 .footer-social-item-twitter {
@@ -513,12 +536,13 @@ body {
 .footer-social-item-facebook {
     background-image: url(../img/logos/logo-facebook.svg);
     background-repeat: no-repeat;
-    margin-left: 29px;
+    /*margin-left: 29px;*/
 }
 
 .footer-social-item-youtube {
     background-image: url(../img/logos/logo-youtube.svg);
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;    
+    /*margin-left: 30px;*/
 }
 
 .htmlacademy-link {
@@ -526,9 +550,25 @@ body {
     background-repeat: no-repeat;
 }
 
-.footer-social-link {
-    
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+.main-footer {    
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
 }
 
+.footer-social-links {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 72px;   
+}
+
+.telephone {
+    min-width: 720px;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.htmlacademy {
+    margin-left: 53px;
+}
