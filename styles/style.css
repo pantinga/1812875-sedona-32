@@ -30,12 +30,10 @@ body {
     color: #333333;
 }
 
-.container {
-    
+.container {    
     width: 1200px;
     margin: 0 auto;
-    background-color: #ffffff;    
-    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
     padding: 0 40px;
 }
 
@@ -44,7 +42,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*удаление меток у всех списков*/
