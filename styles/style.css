@@ -462,7 +462,6 @@ body {
 
 .hotel-card {
     display: flex;
-    flex-direction: column;
     margin: 31px 0 0 72px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
@@ -470,6 +469,19 @@ body {
 
 .hotel-type {
     display: flex;
+}
+
+.aaa {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.bbb {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
 }
 
 /*ссылка отеля внутри заголовка*/
