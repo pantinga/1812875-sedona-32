@@ -471,13 +471,13 @@ body {
     display: flex;
 }
 
-.aaa {
+.hotel-buttons {
     display: flex;
     list-style: none;
     padding: 0;
 }
 
-.bbb {
+.hotel-rating {
     display: flex;
     list-style: none;
     flex-direction: column;
