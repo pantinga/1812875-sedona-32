@@ -56,7 +56,8 @@ body {
 .hotel-list,
 .hotel-type,
 .pagination-list,
-.footer-social-links {
+.footer-social-links,
+.hotel-buttons {
     list-style: none;
 }
 
@@ -358,8 +359,6 @@ body {
     padding: 0;
     padding: 5px 0 0 73px;
     display: flex;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
 }
 
 .choice {
@@ -372,7 +371,7 @@ body {
 .catalog-filter-title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 26px;
+    line-height: 26px;    
 }
 
 .btn-show {
@@ -457,31 +456,57 @@ body {
 
 .hotel-list {
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
 .hotel-card {
     display: flex;
-    margin: 31px 0 0 72px;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    margin: 31px 72px 0 72px;
+}
+
+.hotel-name {
+    margin-left: 37px;
+}
+
+.hotel-mark {
+    margin-right: 78px;
+}
+
+.motel-mark {
+    margin-right: 100px;
+}
+
+.apartments-mark {
+    margin-right: 52px;
 }
 
 .hotel-type {
     display: flex;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #333333;    
+    padding: 0;
+    margin-bottom: 35px;
 }
 
 .hotel-buttons {
-    display: flex;
-    list-style: none;
-    padding: 0;
+    display: flex;    
+    padding: 0;    
 }
 
-.hotel-rating {
+.hotel-rating {    
     display: flex;
+    justify-content: space-between;
     list-style: none;
     flex-direction: column;
-    padding: 0;
+    padding: 0;    
+    min-height: 120px;
+    margin-left: 361px;
+}
+
+.stars {
+    
 }
 
 /*ссылка отеля внутри заголовка*/
@@ -492,15 +517,6 @@ body {
     color: #000000;
     text-decoration: none;
 }
-
-.hotel-type {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
-    color: #333333;    
-    padding: 0;
-}
-
 /*ссылка отеля - подробнее*/
 
 .hotel-card-title {
@@ -521,9 +537,11 @@ body {
     padding: 8px 32px 9px 31px;
     border-radius: 4px;
     text-decoration: none;
+    margin-right: 8px; 
 }
 
 .favouries {
+    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -532,7 +550,7 @@ body {
     color: #ffffff;
     background-color: #83b3d3;
     border: 0;
-    border-radius: 4px;    
+    border-radius: 4px;
 }
 
 .favouries.green {
@@ -561,6 +579,18 @@ body {
     background-color: #83B3D3;
     border-radius: 4px;
     border: 0;
+    margin-left: 288px;
+    width: 625px;
+}
+
+.pagination {
+    display: flex;
+}
+
+.pagination-list {    
+    display: flex;
+    padding: 0;
+    margin-left: 72px;
 }
 
 .pagination-item {    
@@ -569,6 +599,9 @@ body {
     line-height: 26px;
     background-color: #83B3D3;
     border-radius: 4px;
+    height: 55px;
+    width: 55px;
+    margin-left: 8px;
 }
 
 .pagination-item:nth-child(1) {
@@ -581,7 +614,7 @@ body {
 }
 
 .pagination-link.current {
-    color: #000000;
+    color: #000000;       
 }
 
 .on-page {
@@ -589,10 +622,13 @@ body {
     font-size: 18px;
     line-height: 23px;
     color: #333333;
+    margin-left: 300px;
 }
+
 .quantity-type {
     border: 2px solid #E6E6E6;
     border-radius: 4px;
+    margin-left: 50px;
 }
 
 /*Добавление картинок соц сетей */
