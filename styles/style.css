@@ -15,7 +15,7 @@
 }
 
 html {
-    height: 100%;    
+    height: 100%;
 }
   
 body {
@@ -33,7 +33,6 @@ body {
 .container {    
     width: 1200px;
     margin: 0 auto;
-    background-color: #ffffff;
     padding: 0 40px;
 }
 
@@ -42,7 +41,8 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
 }
 
 /*удаление меток у всех списков*/
@@ -109,7 +109,8 @@ body {
 }
 
 .main-index {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
 }
 
 .background-main {
@@ -436,7 +437,8 @@ body {
 }
 
 .main-catalog {
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
 }
 
 .catalog-head {
@@ -483,10 +485,20 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    color: #333333;
+    color: #333333;    
+    padding: 0;
 }
 
 /*ссылка отеля - подробнее*/
+
+.hotel-card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #000000;
+    margin: 0;
+}
+
 .hotel-card-button {
     font-weight: 700;
     font-size: 16px;
@@ -595,9 +607,10 @@ body {
     background-repeat: no-repeat;
 }
 
-.main-footer {    
+.main-footer {  
+    background-color: #ffffff;  
     display: flex;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
 }
 
 .footer-social-links {
