@@ -135,10 +135,10 @@ body {
 }
 
 .background-main {
-    background-image: url(../img/photos/main-background.jpg);
-    margin: 0 auto;
-    min-height: 485px;
+    background-image: url(../img/photos/main-background.jpg);    
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 485px;
 }
 
 .logo-sedona {
