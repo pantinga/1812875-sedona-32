@@ -199,8 +199,34 @@ body {
     height: 384px;
 }
 
-.advantages-wrapper {
-    flex-direction: column;
+.advantages-item-white .advantages-title-info,
+.advantages-item-light .advantages-title-info,
+.advantages-item-dark .advantages-title-info {
+    margin: 98px 0 25px 0;
+}
+
+.advantages-item-home .advantages-title-info,
+.advantages-item-burger .advantages-title-info,
+.advantages-item-souvenir .advantages-title-info {
+    margin: 184px 0 0 0;
+}
+
+.advantages-item-white .advantages-description {
+    width: 220px;
+    margin: 26px 0 0 90px;
+}
+
+.advantages-item-home .advantages-description,
+.advantages-item-burger .advantages-description,
+.advantages-item-souvenir .advantages-description {
+    width: 250px;
+    margin: 20px 0 0 75px;
+}
+
+.advantages-item-light .advantages-description,
+.advantages-item-dark .advantages-description {
+    width: 250px;
+    margin: 26px 0 0 75px;
 }
 
 .list-info {
@@ -211,16 +237,11 @@ body {
     width: 100%;
 }
 
-.advantages-item-light {
-    background-color: rgba(131, 179, 211, 0.1);
+.advantages-item-light,
+.advantages-item-home,
+.advantages-item-souvenir {
+    background-color: rgba(131, 179, 211, 0.12);
     flex-direction: column;
-    width: 400px;
-    height: 384px;
-}
-
-.advantages-item-transparent {
-    flex-direction: column;
-    background-color: #ffffff;
     width: 400px;
     height: 384px;
 }
@@ -234,17 +255,24 @@ body {
 
 .advantages-item-home {
     background-image: url(../img/logos/logo-home.svg);
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
+    background-position: 163px 89px;
 }
 
 .advantages-item-burger {
     background-image: url(../img/logos/logo-burger.svg);
     background-repeat: no-repeat;
+    background-position: 163px 91px;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 400px;
+    height: 384px;
 }
 
 .advantages-item-souvenir {
     background-image: url(../img/logos/logo-souvenir.svg);
     background-repeat: no-repeat;
+    background-position: 168px 85px;
 }
 
 .hotel {
@@ -285,8 +313,7 @@ body {
 }
 
 .subscription {
-    text-align: center;
-    height: 411px;
+    text-align: center;    
     display: flex;
     flex-direction: column;  
     align-items: center;  
@@ -295,6 +322,7 @@ body {
 .subscription-bg {
     background-image: url(../img/photos/blur-background.jpg);
     background-repeat: no-repeat;
+    height: 411px;
 }
 
 .subscription-bg .subscription-head,
@@ -637,6 +665,7 @@ body {
 .pagination-link {
     text-decoration: none; 
     color: #ffffff;
+    
 }
 
 .pagination-link.current {
