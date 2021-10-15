@@ -56,11 +56,7 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    background-color: #ffffff;
-    
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
-    
+    background-color: #ffffff;    
 }
 
 /*удаление меток у всех списков*/
@@ -109,6 +105,10 @@ body {
     padding-left: 21px; 
 }
 
+.link-logo-small {
+    margin-left: 118px;
+}
+
 .navigation-link {
     text-decoration: none;
     font-weight: 700;
@@ -150,7 +150,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+
 }
 
 .advantages-title {        
@@ -160,13 +161,17 @@ body {
     text-transform: uppercase;
     color: #000000;
     width: 720px;
+    height: 80px;
+    margin: 63px 0 23px 0;
 }
 
-.advantages-texts {
+.advantages-text {
     font-weight: 400;
     font-size: 22px;
     line-height: 36px;  
-    width: 720px;  
+    width: 720px;
+    height: 37px;
+    margin: 0 0 79px 0;
 }
 
 /*центрует текст в блоках и переносит новую строку*/
@@ -289,13 +294,17 @@ body {
     text-transform: uppercase;
     color: #000000;
     width: 720px;
+    margin: 91px 0 15px 0;
+    height: 50px;
 }
 
 .hotel-text {
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    width: 720px;  
+    width: 720px;
+    margin: 0 0 73px 0;
+    height: 37px;  
 }
 
 .catalog-hotel-link {
@@ -310,6 +319,7 @@ body {
     margin-right: 313px;
     background-color: #756257;
     border-radius: 4px;
+    margin-bottom: 91px;
 }
 
 .subscription {
@@ -337,6 +347,8 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     width: 720px;
+    height: 50px;
+    margin: 91px 0 15px 0;
 }
 
 .subscription-info {
@@ -344,6 +356,8 @@ body {
     font-size: 22px;
     line-height: 26px;
     width: 720px;
+    height: 72px;
+    margin: 0 0 26px 0;
 }
 
 .subscription-field {    
