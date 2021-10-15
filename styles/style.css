@@ -15,7 +15,7 @@
 }
 
 html {
-    height: 100%;
+    height: 100%;    
 }
   
 body {
@@ -28,12 +28,27 @@ body {
     line-height: 21px;
     background-color: #f2f2f2;
     color: #333333;
+    width: 1280px;
+    margin: 0 auto;
+
 }
 
 .container {    
     width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    background-color: #f2f2f2;
+    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main-header {
@@ -42,7 +57,10 @@ body {
     font-size: 20px;
     line-height: 26px;
     background-color: #ffffff;
-    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
+    
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    
 }
 
 /*удаление меток у всех списков*/
@@ -72,6 +90,7 @@ body {
     padding: 0;
     /*width: 531px;*/
     display: flex;
+    margin: auto 0;
 }
 
 .navigation-main > .navigation-item {
@@ -112,6 +131,7 @@ body {
 .main-index {
     box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
+    flex-grow: 1;
 }
 
 .background-main {
@@ -495,6 +515,10 @@ body {
     padding: 0;    
 }
 
+.rating {
+    margin-left: auto;
+}
+
 .hotel-rating {    
     display: flex;
     justify-content: space-between;
@@ -502,7 +526,6 @@ body {
     flex-direction: column;
     padding: 0;    
     min-height: 120px;
-    margin-left: 361px;
 }
 
 .stars {
@@ -584,13 +607,16 @@ body {
 }
 
 .pagination {
-    display: flex;
+    display: flex;    
+    margin-left: 72px;
+    width: 1056px;
+    justify-content: space-between;
 }
 
 .pagination-list {    
     display: flex;
     padding: 0;
-    margin-left: 72px;
+    margin: 0;
 }
 
 .pagination-item {    
@@ -601,7 +627,7 @@ body {
     border-radius: 4px;
     height: 55px;
     width: 55px;
-    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .pagination-item:nth-child(1) {
@@ -622,13 +648,11 @@ body {
     font-size: 18px;
     line-height: 23px;
     color: #333333;
-    margin-left: 300px;
 }
 
 .quantity-type {
     border: 2px solid #E6E6E6;
     border-radius: 4px;
-    margin-left: 50px;
 }
 
 /*Добавление картинок соц сетей */

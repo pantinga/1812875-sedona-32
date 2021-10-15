@@ -5,12 +5,11 @@
     <title>HTML Academy: Каталог</title>
     <link rel="stylesheet" href="styles/style.css">	
   </head>
-  <body>
-    <div class="container">
+  <body>    
 
 <!--Шапка-->
 
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="navigation">
         <ul class="navigation-list navigation-main">        
           <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
@@ -28,8 +27,7 @@
 
 <!--Заглавный блок-->  
 
-    <main class="main-catalog">
-      <!--div class="page-container"-->
+    <main class="main-catalog container">
       <h1 class="visually-hidden">Каталог</h1>
       <section class="catalog-head">
         <div class="catalog-form-bg">
@@ -270,9 +268,9 @@
               <a class="pagination-link" href="#">10</a>
             </li>          
           </ul>
-          <p class="on-page">Гостиниц на странице:</p>
-          <div class="quantity-type">
-            <label class="visually-hidden" for="quantity">Количество</label>
+          <label class="on-page" for="quantity">Гостиниц на странице:</label>
+          <!--div class="quantity-type"-->
+            <!--label class="visually-hidden" for="quantity">Количество</label-->
             <select class="quantity-choose" id="quantity" name="quantity">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -280,26 +278,25 @@
               <option value="4" selected>4</option>              
             </select>            
           </div>
-        </div>
+        <!--/div-->
       </section>
       
 <!--Кнопка подписаться-->      
 
       <section class="subscription">        
         <h2 class="subscription-head">Подпишитесь на рассылку</h2>
-        <p class="subscription-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscription-info">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">          
           <label class="visually-hidden" for="subscription-email">Ваш e-mail</label>
           <input class="subscription-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="subscription-email" required>
           <button class="subscription-btn" type="submit">Подписаться</button>          
         </form>
       </section>
-      <!--/div-->
     </main>
 
 <!--Подвал-->
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="footer-social">
         <ul class="footer-social-links">          
           <li class="footer-social-item footer-social-item-twitter">
@@ -326,6 +323,5 @@
         <a class="htmlacademy-link" href="https://htmlacademy.ru/"><span class="visually-hidden">htmlacademy.ru</span></a>
       </div>  
     </footer>
-    </div>  
   </body>
 </html>
