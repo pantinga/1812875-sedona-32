@@ -28,9 +28,6 @@ body {
     line-height: 21px;
     background-color: #f2f2f2;
     color: #333333;
-    width: 1280px;
-    margin: 0 auto;
-
 }
 
 .container {    
@@ -210,6 +207,12 @@ body {
     margin: 98px 0 25px 0;
 }
 
+.list-info .advantages-title-info,
+.advantages-item-light .advantages-title-info,
+.advantages-item-dark .advantages-title-info {
+    color: #000000;
+}
+
 .advantages-item-home .advantages-title-info,
 .advantages-item-burger .advantages-title-info,
 .advantages-item-souvenir .advantages-title-info {
@@ -237,9 +240,10 @@ body {
 .list-info {
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     background-color: #ffffff;
     color: #333333;
-    width: 100%;
+    width: 100%;    
 }
 
 .advantages-item-light,
@@ -326,13 +330,22 @@ body {
     text-align: center;    
     display: flex;
     flex-direction: column;  
-    align-items: center;  
+    align-items: center;
+    min-height: 411px;
+}
+
+.subscription-info {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    width: 720px;
+    min-height: 72px;
+    margin: 0 0 26px 0;
 }
 
 .subscription-bg {
     background-image: url(../img/photos/blur-background.jpg);
-    background-repeat: no-repeat;
-    height: 411px;
+    background-repeat: no-repeat;    
 }
 
 .subscription-bg .subscription-head,
@@ -349,15 +362,6 @@ body {
     width: 720px;
     height: 50px;
     margin: 91px 0 15px 0;
-}
-
-.subscription-info {
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 26px;
-    width: 720px;
-    height: 72px;
-    margin: 0 0 26px 0;
 }
 
 .subscription-field {    
@@ -425,6 +429,7 @@ body {
 
 .choice {
     display: flex;
+    flex-wrap: wrap;
     padding: 45px 0 0 71px;
 }
 
@@ -542,7 +547,7 @@ body {
 
 .hotel-card {
     display: flex;
-    margin: 31px 72px 0 72px;
+    margin: 30px 72px 28px 72px;
 }
 
 .hotel-name {
