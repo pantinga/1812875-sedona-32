@@ -547,7 +547,8 @@ body {
 
 .hotel-card {
     display: flex;
-    margin: 30px 72px 28px 72px;
+    /*margin: 28px 72px 30px 72px;*/
+    padding: 28px 72px 30px 72px;
 }
 
 .hotel-name {
