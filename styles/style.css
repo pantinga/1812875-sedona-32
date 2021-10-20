@@ -141,6 +141,7 @@ body {
 .logo-sedona {
     display: block;
     margin: 0 auto; 
+    padding-top: 51px;
 }
 
 .advantages-info {
@@ -353,6 +354,12 @@ body {
     color: #ffffff;
 }
 
+.subscription-form{
+    display: grid;
+    grid-template-columns: 600px 200px;
+    grid-template-rows: 60px;
+}
+
 .subscription-head {
     color: #000000;
     font-weight: 700;
@@ -524,10 +531,6 @@ body {
     box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
 }
 
-.catalog-head {
-    
-}
-
 .select-control {
     font-family: "PT Sans", sans-serif;
     font-weight: 400;
@@ -547,7 +550,6 @@ body {
 
 .hotel-card {
     display: flex;
-    /*margin: 28px 72px 30px 72px;*/
     padding: 28px 72px 30px 72px;
 }
 
@@ -555,31 +557,18 @@ body {
     margin-left: 37px;
 }
 
-.hotel-mark {
-    margin-right: 78px;
-}
-
-.motel-mark {
-    margin-right: 100px;
-}
-
-.apartments-mark {
-    margin-right: 52px;
-}
-
 .hotel-type {
-    display: flex;
+    display: grid;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     color: #333333;    
     padding: 0;
     margin-bottom: 35px;
-}
-
-.hotel-buttons {
-    display: flex;    
-    padding: 0;    
+    grid-template-columns: 151px 160px;
+    grid-template-rows: 23px 37px;
+    column-gap: 8px;
+    row-gap: 31px;
 }
 
 .rating {
@@ -593,10 +582,6 @@ body {
     flex-direction: column;
     padding: 0;    
     min-height: 120px;
-}
-
-.stars {
-    
 }
 
 /*ссылка отеля внутри заголовка*/
@@ -671,20 +656,23 @@ body {
     border: 0;
     margin-left: 288px;
     width: 625px;
+    height: 55px;
 }
 
 .pagination {
-    display: flex;    
+    display: flex;
+    justify-content: space-between;    
     margin: 31px 0 0 72px;
     width: 1056px;
-    height: 55px;
-    justify-content: space-between;
 }
 
 .pagination-list {    
-    display: flex;
+    display: grid;
+    grid-template-columns: 55px 55px 55px 55px 55px 55px;
+    grid-template-rows: 55px;
+    column-gap: 8px;
     padding: 0;
-    margin: 0;
+    margin: 0;    
 }
 
 .pagination-item {    
@@ -693,9 +681,8 @@ body {
     line-height: 26px;
     background-color: #83B3D3;
     border-radius: 4px;
-    height: 55px;
-    width: 55px;
-    margin-right: 8px;
+    text-align: center;
+    padding-top: 14px;
 }
 
 .pagination-item:first-child {
@@ -716,14 +703,22 @@ body {
     color: #000000;       
 }
 
+.quantity-selection {
+    display: grid;
+    grid-template-columns: 226px 160px;
+    grid-template-rows: 48px;    
+    margin-top: 4px;
+}
+
 .on-page {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
     color: #333333;
+    padding-top: 12px;
 }
 
-.quantity-type {
+.quantity-choise {
     border: 2px solid #E6E6E6;
     border-radius: 4px;
 }
