@@ -202,6 +202,10 @@ body {
     height: 384px;
 }
 
+.advantages-photo {
+    display: block;
+}
+
 .advantages-item-white .advantages-title-info,
 .advantages-item-light .advantages-title-info,
 .advantages-item-dark .advantages-title-info {
@@ -355,9 +359,9 @@ body {
 }
 
 .subscription-form{
-    display: grid;
-    grid-template-columns: 600px 200px;
-    grid-template-rows: 60px;
+    display: flex;
+    width: 800px;
+    height: 60px;
 }
 
 .subscription-head {
@@ -381,6 +385,7 @@ body {
     border-radius: 10px 0 0 10px;
     border: 0;
     padding-left: 22px;
+    width: 600px;
 }
 
 /*указать область ввода текста email 559*60*/
@@ -394,7 +399,8 @@ body {
     color: #ffffff;
     background-color: #83b3d3;
     border-radius: 0 10px 10px 0;
-    border: 0;    
+    border: 0;
+    width: 200px;   
 }
 
 .telephone-number {
@@ -668,7 +674,7 @@ body {
 
 .pagination-list {    
     display: grid;
-    grid-template-columns: 55px 55px 55px 55px 55px 55px;
+    grid-template-columns: repeat(6, 55px);
     grid-template-rows: 55px;
     column-gap: 8px;
     padding: 0;
