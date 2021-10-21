@@ -710,9 +710,7 @@ body {
 }
 
 .quantity-selection {
-    display: grid;
-    grid-template-columns: 226px 160px;
-    grid-template-rows: 48px;    
+    display: flex;
     margin-top: 4px;
 }
 
@@ -722,11 +720,13 @@ body {
     line-height: 23px;
     color: #333333;
     padding-top: 12px;
+    width: 226px;
 }
 
 .quantity-choise {
     border: 2px solid #E6E6E6;
     border-radius: 4px;
+    width: 160px;    
 }
 
 /*Добавление картинок соц сетей */
