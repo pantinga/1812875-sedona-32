@@ -178,68 +178,13 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    display: grid;
-    /*flex-wrap: wrap;*/
-    grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(4, 384px);
-
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.advantages-item,
-.list-info,
-.small-town-info 
-.terrace{
-    display: grid;
-}
-
-.small-town-info {
-    grid-area: 1/1/2/2;
-    display: grid;
-}
-
-.terrace {
-    display: grid;
-    grid-area: 1/2/2/4;
-}
-
-.advantages-item-home {
-    display: grid;
-    grid-area: 2/1/3/2;
-}
-
-.advantages-item-burger {
-    display: grid;
-    grid-area: 2/2/3/3;
-}
-
-.advantages-item-souvenir {
-    display: grid;
-    grid-area: 2/3/3/4;
-}
-
-.canyon {
-    display: grid;
-    grid-area: 3/1/4/3;
-}
-
-.bridge-info {
-    display: grid;
-    grid-area: 3/3/4/4;
-}
-
-.qwe {
-    display: grid;
-    grid-area: 4/1/5/2;
-}
-
-.asd {
-    display: grid;
-    grid-area: 4/2/5/3;
-}
-
-.zxc {
-    display: grid;
-    grid-area: 4/3/5/4;
+.advantages-item {    
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .advantages-title-info {
@@ -252,6 +197,7 @@ body {
 .advantages-item-white {
     background-color: rgb(131, 179, 211);
     color: #ffffff;
+    flex-direction: column;
     width: 400px;
     height: 384px;
 }
@@ -298,20 +244,24 @@ body {
 
 .list-info {
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
     background-color: #ffffff;
     color: #333333;
-    width: 100%;   
+    width: 100%;    
 }
 
 .advantages-item-light,
 .advantages-item-home,
 .advantages-item-souvenir {
     background-color: rgba(131, 179, 211, 0.12);
+    flex-direction: column;
     width: 400px;
     height: 384px;
 }
 
 .advantages-item-dark {
+    flex-direction: column;
     background-color: rgba(131, 179, 211, 0.2);
     width: 400px;
     height: 384px;
@@ -327,6 +277,7 @@ body {
     background-image: url(../img/logos/logo-burger.svg);
     background-repeat: no-repeat;
     background-position: 163px 91px;
+    flex-direction: column;
     background-color: #ffffff;
     width: 400px;
     height: 384px;
@@ -599,16 +550,13 @@ body {
 }
 
 .hotel-list {
-    display: grid;
-    grid-template-rows: repeat(4, 123px);
-    row-gap: 58px;
-    margin: 28px 72px 30px 72px;
+    margin: 0;
     padding: 0;    
 }
 
 .hotel-card {
-    display: grid;
-    grid-template-columns: 180px 319px 160px;
+    display: flex;
+    padding: 28px 72px 30px 72px;
 }
 
 .hotel-name {
@@ -630,12 +578,12 @@ body {
 }
 
 .rating {
-    margin-left: 398px;
+    margin-left: auto;
 }
 
 .hotel-rating {    
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     list-style: none;
     flex-direction: column;
     padding: 0;    
