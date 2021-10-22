@@ -178,13 +178,17 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    /*flex-wrap: wrap;*/
 }
 
 .advantages-item {    
     display: flex;
     flex-wrap: wrap;
+}
+
+.advantages-list > .photo {
+    display: grid;
 }
 
 .advantages-title-info {
