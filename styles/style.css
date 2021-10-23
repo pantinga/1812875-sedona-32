@@ -179,7 +179,7 @@ body {
     padding: 0;
     text-align: center;
     display: grid;
-    /*flex-wrap: wrap;*/
+    grid-template-columns: repeat(3, 400px);    
 }
 
 .advantages-item {    
@@ -188,7 +188,7 @@ body {
 }
 
 .advantages-list > .photo {
-    display: grid;
+    grid-column: 1/4;
 }
 
 .advantages-title-info {
