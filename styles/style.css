@@ -53,12 +53,14 @@ body {
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
-    background-color: #ffffff;    
+    background-color: #ffffff;
+    min-height: 65px;   
 }
 
 /*удаление меток у всех списков*/
 
-.navigation-list,
+.navigation-main-list,
+.navigation-user-list,
 .advantages-list,
 .list-info,
 .catalog-filter-list,
@@ -81,18 +83,31 @@ body {
 .navigation-list {
     margin: 0;
     padding: 0;
-    /*width: 531px;*/
+    width: 460px;
     display: flex;
-    margin: auto 0;
+    flex-wrap: wrap;
+    /*margin: auto 0;*/
+}
+
+.navigation-main-list {
+    margin: 0;
+    padding: 0;
+    width: 460px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navigation-main > .navigation-item {
     padding-right: 33px;
 } 
 
-.navigation-user {
-    margin-left: auto;
+.navigation-item:last-of-type {
+    padding: 0;
 }
+
+/*.navigation-user {
+    margin-left: auto;
+}*/
 
 .navigation-user > .navigation-item {
     padding-left: 33px;    
@@ -103,7 +118,8 @@ body {
 }
 
 .link-logo-small {
-    margin-left: 118px;
+    position: absolute;
+    margin-left: 460px;
 }
 
 .navigation-link {
@@ -558,6 +574,10 @@ body {
     padding: 0;    
 }
 
+.hotel-card-image {
+    margin-top: 3px;
+}
+
 .hotel-card {
     display: flex;
     padding: 28px 72px 30px 72px;
@@ -612,6 +632,10 @@ body {
     margin: 0;
 }
 
+.hotel-buttons-item:nth-child(3) {
+    margin-top: 6px;
+}
+
 .hotel-card-button {
     font-weight: 700;
     font-size: 16px;
@@ -622,7 +646,6 @@ body {
     padding: 8px 32px 9px 31px;
     border-radius: 4px;
     text-decoration: none;
-    margin-right: 8px; 
 }
 
 .favouries {
@@ -635,11 +658,14 @@ body {
     color: #ffffff;
     background-color: #83b3d3;
     border: 0;
-    border-radius: 4px;
+    border-radius: 4px;        
+    padding: 8px 30px 8px 30px;
+    cursor: pointer;
 }
 
 .favouries.green {
     background-color: #7DB54F;
+    padding: 8px 28px 8px 28px;
 }
 
 .rating-text {
@@ -667,6 +693,7 @@ body {
     margin-left: 288px;
     width: 625px;
     height: 55px;
+    cursor: pointer;
 }
 
 .pagination {
@@ -693,6 +720,7 @@ body {
     border-radius: 4px;
     text-align: center;
     padding-top: 14px;
+    cursor: pointer;
 }
 
 .pagination-item:first-child {
