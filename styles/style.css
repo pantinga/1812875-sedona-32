@@ -80,6 +80,21 @@ body {
     margin-right: 72px;
 }
 
+.circle {
+    font-size: 10px;
+    line-height: 13px;
+    color: #ffffff;
+}
+
+.circle::before {
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #7DB54F;
+    content: "";
+}
+
 .navigation-main-list {
     margin: 0;
     padding: 0;
