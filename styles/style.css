@@ -84,15 +84,14 @@ body {
     font-size: 10px;
     line-height: 13px;
     color: #ffffff;
-}
-
-.circle::before {
-    position: absolute;
     width: 19px;
     height: 19px;
     border-radius: 50%;
     background-color: #7DB54F;
-    content: "";
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    text-align: center;
 }
 
 .navigation-main-list {
@@ -109,7 +108,8 @@ body {
 } 
 
 .navigation-link:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
+    outline-offset: 3px;
     border-radius: 10px;
 }
 
@@ -129,6 +129,9 @@ body {
 
 .navigation-item:last-of-type {
     margin: 0;
+}
+.navigation-icon {
+    fill: #756257;
 }
 
 .navigation-user-list {    
