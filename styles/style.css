@@ -90,11 +90,30 @@ body {
 }
 
 .navigation-main-list > .navigation-item {
-    padding-right: 33px;
+    margin-right: 33px;    
 } 
 
+.navigation-link:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 10px;
+}
+
+.navigation-link:hover {
+    color: #756257;
+}
+
+.navigation-link:active {
+    color: #756257;
+    opacity: 0.3;
+}
+
+.navigation-link:disabled {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #756257;
+}
+
 .navigation-item:last-of-type {
-    padding: 0;    
+    margin: 0;
 }
 
 .navigation-user-list {    
@@ -127,6 +146,8 @@ body {
     font-size: 20px;
     line-height: 26px;
     color: #000000;
+    position: relative;
+    /*display: block;*/
 }
 
 .btn-want {
@@ -156,7 +177,7 @@ body {
     display: block;
     margin: 0 auto; 
     padding-top: 51px;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
 }
 
 .advantages-info {
@@ -793,5 +814,5 @@ body {
 }
 
 .htmlacademy {
-    padding: 42px 0 0 0px;
+    padding: 42px 0 0 53px;
 }
