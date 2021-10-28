@@ -112,6 +112,7 @@ body {
 }
 
 .navigation-link:focus {
+    color: #756257;
     outline: 3px solid #83b3d3;
     outline-offset: 3px;
     border-radius: 10px;
@@ -478,7 +479,7 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;
-    color: rgb(0, 0, 0, 0.6);
+    color: #616161;
     background-color: #f2f2f2;
     border-radius: 10px 0 0 10px;
     border: 0;
@@ -486,7 +487,30 @@ body {
     width: 600px;
 }
 
-/*указать область ввода текста email 559*60*/
+.subscription-field:hover {
+    background-color: #e5e5e5;
+    color: #5c5c5c;
+}
+
+.subscription-field:focus:empty {
+    background-color: #e5e5e5;
+    outline: 3px solid #83b3d3;
+    color: #5c5c5c;
+}
+
+.subscription-field:not(:placeholder-shown) {
+    background-color: #ffffff;
+    outline: 2px solid #000000;
+    outline-offset: -2px;
+    color: #000000;
+}
+
+.subscription-field:focus:invalid {
+    background-color: #ffffff;
+    outline: 2px solid #ff5757;
+    outline-offset: -2px;
+    color: #666666;    
+}
 
 .subscription-btn {
     font-family: "PT Sans", sans-serif;
@@ -499,6 +523,21 @@ body {
     border-radius: 0 10px 10px 0;
     border: 0;
     width: 200px;   
+}
+
+.subscription-btn:hover {
+    background-color: #68a2ca;
+}
+
+.subscription-btn:focus {
+    background-color: #68a2ca;
+    outline: 3px solid #756257;
+}
+
+.subscription-btn:active {
+    background-color: #68a2ca;
+    color: rgba(255, 255, 255, 0.3);
+    outline: 0;
 }
 
 .telephone-number {
@@ -865,17 +904,29 @@ body {
 }
 
 .social-icon {
-    fill: #83b3d3;;
+    fill: #83b3d3;
 }
 
 .social-icon:hover {
     fill: #68a2ca;
 }
 
-.social-icon.active {
+.footer-social-link:focus {
     outline: 3px solid #83b3d3;
     outline-offset: 3px;
     border-radius: 10px;
+}
+
+.social-icon:focus {
+    fill: #68a2ca;
+}
+
+.footer-social-link:active {
+    outline: 0;
+}
+
+.social-icon:active {
+    fill: #d2e3ef;
 }
 
 .telephone {
@@ -886,6 +937,36 @@ body {
     padding-top: 40px;
 }
 
+.telephone-number:hover {
+    color: #756257;
+}
+
+.telephone-number:focus {
+    color: #756257;
+    outline: 3px solid #83b3d3;
+    outline-offset: 3px;
+    border-radius: 10px;
+}
+
+.telephone-number:active {
+    outline: 0px;
+    color: #d6d0cc;
+}
+
 .htmlacademy {
     padding: 42px 0 0 53px;
+}
+
+.htmlacademy-logo:hover{
+    fill: #756257;
+}
+
+.htmlacademy-link:focus {
+    outline: 3px solid #83b3d3;
+    outline-offset: 3px;
+    border-radius: 10px;
+}
+
+.htmlacademy-logo:active {
+    fill: #d6d0cd;
 }
