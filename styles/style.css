@@ -118,6 +118,7 @@ body {
 }
 
 .navigation-link:active {
+    outline: 0;
     color: #756257;
     opacity: 0.3;
 }
@@ -165,9 +166,10 @@ body {
 }
 
 .btn-want:active {
-    background-color: #615048;
+    outline: 0;
     opacity: 1;
-    color: #90847f;
+    background-color: #615048;
+    color: rgba(255, 255, 255, 0.3);
 }    
 
 .navigation-user-list {    
@@ -404,14 +406,27 @@ body {
     font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
-    padding: 17px 130px 17px 130px;    
+    padding: 12px 150px;
     color: #ffffff;
     text-decoration: none;
-    margin-left: 312px;
-    margin-right: 313px;
     background-color: #756257;
     border-radius: 4px;
     margin-bottom: 91px;
+}
+
+.catalog-hotel-link:hover {
+    background-color: #615048;
+}
+
+.catalog-hotel-link:focus {
+    background-color: #615048;
+    outline: 3px solid #83b3d3;
+    outline-offset: -3px;
+}
+
+.catalog-hotel-link:active {
+    color: rgba(255, 255, 255, 0.3);
+    outline: 0;
 }
 
 .subscription {
