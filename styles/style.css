@@ -142,8 +142,12 @@ body {
     fill: #756257;
 }
 
-.navigation-icon:focus {
+.navigation-link:focus .navigation-icon {
     fill: #756257;
+}
+
+.navigation-icon:active {
+    fill: #d6d0cc;
 }
 
 .navigation-item > .btn-want {
@@ -204,7 +208,6 @@ body {
     line-height: 26px;
     color: #000000;
     position: relative;
-    /*display: block;*/
 }
 
 .main-index {    
@@ -492,20 +495,20 @@ body {
     color: #5c5c5c;
 }
 
-.subscription-field:focus:empty {
+.subscription-field:focus {
     background-color: #e5e5e5;
     outline: 3px solid #83b3d3;
     color: #5c5c5c;
 }
 
-.subscription-field:not(:placeholder-shown) {
+.subscription-field:not(:placeholder-shown):focus {
     background-color: #ffffff;
     outline: 2px solid #000000;
     outline-offset: -2px;
     color: #000000;
 }
 
-.subscription-field:focus:invalid {
+.subscription-field:invalid:not(:focus) {
     background-color: #ffffff;
     outline: 2px solid #ff5757;
     outline-offset: -2px;
@@ -522,7 +525,8 @@ body {
     background-color: #83b3d3;
     border-radius: 0 10px 10px 0;
     border: 0;
-    width: 200px;   
+    width: 200px;  
+    cursor: pointer; 
 }
 
 .subscription-btn:hover {
@@ -687,8 +691,9 @@ body {
 }
 
 .hotel-list {
-    margin: 0;
-    padding: 0;    
+    margin: 0 72px;
+    padding: 0;
+    border-top: 1px solid #e5e5e5;    
 }
 
 .hotel-card-image {
@@ -697,7 +702,9 @@ body {
 
 .hotel-card {
     display: flex;
-    padding: 28px 72px 30px 72px;
+    height: 123px;
+    padding: 28px 0 30px 0;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .hotel-name {
@@ -911,21 +918,15 @@ body {
     fill: #68a2ca;
 }
 
-.footer-social-link:focus {
+.footer-social-link:focus .social-icon {
+    fill: #68a2ca;
     outline: 3px solid #83b3d3;
     outline-offset: 3px;
     border-radius: 10px;
 }
 
-.social-icon:focus {
-    fill: #68a2ca;
-}
-
-.footer-social-link:active {
+.footer-social-link:active .social-icon {
     outline: 0;
-}
-
-.social-icon:active {
     fill: #d2e3ef;
 }
 
@@ -957,16 +958,18 @@ body {
     padding: 42px 0 0 53px;
 }
 
-.htmlacademy-logo:hover{
+.htmlacademy-icon:hover{
     fill: #756257;
 }
 
-.htmlacademy-link:focus {
+.htmlacademy-link:focus .htmlacademy-icon {
+    fill: #756257;
     outline: 3px solid #83b3d3;
     outline-offset: 3px;
     border-radius: 10px;
 }
 
-.htmlacademy-logo:active {
+.htmlacademy-link:active .htmlacademy-icon {
+    outline: 0;
     fill: #d6d0cd;
 }
