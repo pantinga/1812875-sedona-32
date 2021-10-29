@@ -94,6 +94,11 @@ body {
     text-align: center;
 }
 
+.number {
+    display: inline-block;
+    vertical-align: sub;
+}
+
 .navigation-main-list {
     margin: 0;
     padding: 0;
@@ -495,7 +500,7 @@ body {
     color: #5c5c5c;
 }
 
-.subscription-field:focus {
+.subscription-field:focus-visible {
     background-color: #e5e5e5;
     outline: 3px solid #83b3d3;
     color: #5c5c5c;
@@ -508,7 +513,7 @@ body {
     color: #000000;
 }
 
-.subscription-field:invalid:not(:focus) {
+.subscription-field:invalid:focus-within {
     background-color: #ffffff;
     outline: 2px solid #ff5757;
     outline-offset: -2px;
@@ -576,9 +581,12 @@ body {
     font-size: 16px;
     line-height: 21px;
     margin: 0;
-    padding: 0;
     padding: 5px 0 0 73px;
     display: flex;
+}
+
+.to-home-icone:hover {
+    fill: red;
 }
 
 .choice {
@@ -918,7 +926,7 @@ body {
     fill: #68a2ca;
 }
 
-.footer-social-link:focus .social-icon {
+.footer-social-link:focus .social-icon {    
     fill: #68a2ca;
     outline: 3px solid #83b3d3;
     outline-offset: 3px;
@@ -942,7 +950,7 @@ body {
     color: #756257;
 }
 
-.telephone-number:focus {
+.telephone-number:focus {    
     color: #756257;
     outline: 3px solid #83b3d3;
     outline-offset: 3px;
