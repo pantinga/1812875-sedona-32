@@ -746,6 +746,8 @@ body {
     min-height: 120px;
 }
 
+
+
 /*ссылка отеля внутри заголовка*/
 .hotel-link {
     font-weight: 700;
@@ -800,7 +802,17 @@ body {
     padding: 8px 28px 8px 28px;
 }
 
-.rating-text {
+.rating-stars {
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+}
+
+.star:not(:last-of-type) {
+    padding-right: 7px;
+}
+
+.rating-score {
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
@@ -810,6 +822,11 @@ body {
     height: 37px;
     border-radius: 4px;
     background-color: #f2f2f2;
+}
+
+.rating-score-wraper {
+    padding-top: 8px;
+    text-align: center;
 }
 
 .show-more {
