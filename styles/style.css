@@ -865,8 +865,7 @@ body {
 
 .pagination-link {
     text-decoration: none; 
-    color: #ffffff;
-    
+    color: #ffffff;    
 }
 
 .pagination-link.current {
@@ -932,9 +931,7 @@ body {
 
 .footer-social-link:focus .social-icon {    
     fill: #68a2ca;
-    padding: 10px;
-    outline: 3px solid #83b3d3;    
-    
+    outline: 3px solid #83b3d3;
     outline-offset:  3px;
     border-radius: 10px;
 }
