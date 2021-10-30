@@ -185,7 +185,19 @@ body {
     left: 5px;
 }
 
-
+.navigation-link-favourites:focus {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    outline: 3px solid #83b3d3;
+    outline-offset: 3px;
+    border-radius: 10px;
+    position: relative;
+    top: -2px;
+    right: 5px;
+}
 
 .navigation-icon:hover {
     fill: #756257;
@@ -206,10 +218,12 @@ body {
     padding-top: 4px; 
 }
 
+.navigation-item-favourites:focus {
+    padding: 0px;
+}
+
 .navigation-item-search {
     padding-right: 21px;
-    /*outline: 3px solid #83b3d3;
-    border-radius: 10px;*/
     padding-top: 4px;
 }
 
