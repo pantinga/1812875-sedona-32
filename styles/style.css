@@ -80,25 +80,6 @@ body {
     margin-right: 72px;
 }
 
-.circle {
-    font-size: 10px;
-    line-height: 13px;
-    color: #ffffff;
-    width: 19px;
-    height: 19px;
-    border-radius: 50%;
-    background-color: #7db54f;
-    position: absolute;
-    top: -8px;
-    left: 12px;
-    text-align: center;
-}
-
-.number {
-    display: inline-block;
-    vertical-align: sub;
-}
-
 .navigation-main-list {
     margin: 0;
     padding: 0;
@@ -152,25 +133,84 @@ body {
     margin: 0;
 }
 
+.navigation-user-list {    
+    margin: 0;
+    margin-left: auto;
+    max-width: 460px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 18px;    
+}
+
+.navigation-link-search,
+.navigation-link-favourites {
+    position: relative;
+    outline: none;
+}
+
+.circle {
+    font-size: 10px;
+    line-height: 13px;
+    color: #ffffff;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #7db54f;
+    position: absolute;
+    top: -8px;
+    left: 12px;
+    text-align: center;
+}
+
+.number {
+    display: inline-block;
+    vertical-align: sub;
+}
+
+.number:active {
+    opacity: 0.3;
+}
+
 .navigation-link-search:focus {
     display: flex;
     width: 28px;
     height: 28px;
     justify-content: center;
     align-items: center;
+    outline: 3px solid #83b3d3;
+    outline-offset: 3px;
+    border-radius: 10px;
+    position: relative;
+    top: -3px;
+    left: 5px;
 }
+
 
 
 .navigation-icon:hover {
     fill: #756257;
 }
 
-.navigation-link:focus .navigation-icon {
+.navigation-link-search:focus .navigation-icon,
+.navigation-link-favourites:focus .navigation-icon {
     fill: #756257;
 }
 
-.navigation-icon:active {
+.navigation-link-search:active .navigation-icon,
+.navigation-link-favourites:active .navigation-icon {
     fill: #d6d0cc;
+}
+
+.navigation-item-favourites {
+    padding-right: 33px;
+    padding-top: 4px; 
+}
+
+.navigation-item-search {
+    padding-right: 21px;
+    /*outline: 3px solid #83b3d3;
+    border-radius: 10px;*/
+    padding-top: 4px;
 }
 
 .navigation-item > .btn-want {
@@ -200,26 +240,7 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }    
 
-.navigation-user-list {    
-    margin: 0;
-    margin-left: auto;
-    max-width: 460px;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 18px;    
-}
 
-.navigation-item-favourites {
-    padding-right: 33px;
-    padding-top: 4px; 
-}
-
-.navigation-item-search {
-    padding-right: 21px;
-    outline: 3px solid #83b3d3;
-    border-radius: 10px;
-    padding-top: 4px;
-}
 
 .link-logo-small {
     position: absolute;
