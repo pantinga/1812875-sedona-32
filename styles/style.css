@@ -146,6 +146,17 @@ body {
 .navigation-link-favourites {
     position: relative;
     outline: none;
+    display: flex;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+    /*outline: 3px solid #83b3d3;
+    outline-offset: 3px;*/
+    border-radius: 10px;
+    position: relative;
+    top: -3px;
+    left: 5px;    
 }
 
 .circle {
@@ -172,31 +183,31 @@ body {
 }
 
 .navigation-link-search:focus {
-    display: flex;
+    /*display: flex;
     width: 28px;
     height: 28px;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     outline: 3px solid #83b3d3;
     outline-offset: 3px;
-    border-radius: 10px;
+    /*border-radius: 10px;
     position: relative;
     top: -3px;
-    left: 5px;
+    left: 5px;*/
 }
 
 .navigation-link-favourites:focus {
-    display: flex;
+    /*display: flex;
     width: 28px;
     height: 28px;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
     outline: 3px solid #83b3d3;
     outline-offset: 3px;
-    border-radius: 10px;
+    /*border-radius: 10px;
     position: relative;
     top: -2px;
-    right: 5px;
+    right: 5px;*/
 }
 
 .navigation-icon:hover {
@@ -214,8 +225,11 @@ body {
 }
 
 .navigation-item-favourites {
-    padding-right: 33px;
-    padding-top: 4px; 
+    /*padding-right: 33px;
+    padding-top: 4px; */
+    position: relative;
+    top: 3px;
+    right: 32px;
 }
 
 .navigation-item-favourites:focus {
@@ -223,8 +237,12 @@ body {
 }
 
 .navigation-item-search {
-    padding-right: 21px;
-    padding-top: 4px;
+    /*padding-right: 21px;
+    padding-top: 4px;*/
+    position: relative;
+    top: 4px;
+    right: 43px;
+
 }
 
 .navigation-item > .btn-want {
@@ -253,8 +271,6 @@ body {
     background-color: #615048;
     color: rgba(255, 255, 255, 0.3);
 }    
-
-
 
 .link-logo-small {
     position: absolute;
@@ -631,7 +647,11 @@ body {
     display: flex;
 }
 
-.to-home-icone:hover {
+.to-home {
+    text-decoration: none;
+}
+
+.to-home-icon:hover {
     fill: red;
 }
 
