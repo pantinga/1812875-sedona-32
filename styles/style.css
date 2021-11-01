@@ -831,8 +831,6 @@ body {
     min-height: 120px;
 }
 
-
-
 /*ссылка отеля внутри заголовка*/
 .hotel-link {
     font-weight: 700;
@@ -1100,11 +1098,9 @@ body {
     color: #d6d0cc;
 }
 
-.htmlacademy {
-    position: relative;
-    left: 33px;
-    top: 26px;
-}
+/*.htmlacademy {
+    position: relative;    
+}*/
 
 .htmlacademy-link {    
     position: relative;
@@ -1115,10 +1111,13 @@ body {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    left: 33px;
+    top: 26px;    
 }
 
 .htmlacademy-link:focus {
     outline: 3px solid #83b3d3;
+    border-radius: 10px;
 }
 
 .htmlacademy-icon:hover{
