@@ -794,25 +794,30 @@ body {
     margin-right: 15px;
 }
 
-.btn-show-card-item:nth-child(1) {
-    background-image: url(../img/icons/mode-tile.svg);
+.show-cards-item {
+    background-image: url(../img/icons/mode-cards.svg);
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 15px;
 }
 
-.btn-show-card-item:nth-child(2) {
+.show-single-card-item {
     background-image: url(../img/icons/mode-slideshow.svg);
     background-repeat: no-repeat;
     background-position: center;
+    margin-right: 15px;
 }
 
-.btn-show-card-item:nth-child(3) {
+.show-list-item {
     background-image: url(../img/icons/mode-list.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.btn-show-card-as {
+
+.show-cards-link,
+.show-single-card-link,
+.show-list-link {
     display: block;
     height: 44px;
     width: 44px;
@@ -820,7 +825,22 @@ body {
     border-radius: 4px;    
 }
 
-.btn-show-card-as:nth {
+.show-list-link {
+    outline: 2px solid #000000;
+}
+
+.show-cards-link:hover,
+.show-single-card-link:hover,
+.show-list-link:hover,
+.show-cards-link:focus,
+.show-single-card-link:focus,
+.show-list-link:focus {
+    outline: 2px solid #83b3d3;
+}
+
+.show-cards-link:active,
+.show-single-card-link:active,
+.show-list-link:active {
     outline: 2px solid #000000;
 }
 
