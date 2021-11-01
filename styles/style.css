@@ -933,10 +933,23 @@ body {
     padding: 8px 32px 9px 31px;
     border-radius: 4px;
     text-decoration: none;
+    outline: none;
+}
+
+.hotel-card-button:hover {
+    background-color: #615048;
+}
+
+.hotel-card-button:focus {
+    outline: 3px solid #83b3d3;
+}
+
+.hotel-card-button:active {
+    outline: none;
+    color: #90847f;
 }
 
 .favouries {
-    margin: 0;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -950,9 +963,46 @@ body {
     cursor: pointer;
 }
 
-.favouries.green {
+.favouries:hover {
+    background-color: #68a2ca;
+    outline: 1px solid #756257;
+    outline-offset: -1px;    
+}
+
+.favouries:focus {
+    outline: 3px solid #756257;
+}
+
+.favouries:active {
+    color: #95beda;
+    outline: none;
+}
+
+.green {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #ffffff;    
+    border: 0;
+    border-radius: 4px;            
+    cursor: pointer;
     background-color: #7db54e;
     padding: 8px 28px 8px 28px;
+}
+
+.green:hover {
+    background-color: #6c9e42;
+}
+
+.green:focus {
+    outline: 3px solid #756257;
+}
+
+.green:active {
+    color: #98bb7b;
+    outline: none;
 }
 
 .rating-stars {
