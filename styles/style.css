@@ -611,6 +611,7 @@ body {
     font-size: 60px;
     line-height: 78px;
     padding: 32px 0 0 71px;
+    margin-bottom: -3px;
 }
 
 .breadcrumbs {
@@ -618,16 +619,44 @@ body {
     font-size: 16px;
     line-height: 21px;
     margin: 0;
-    padding: 5px 0 0 73px;
     display: flex;
+    padding-left: 73px;
 }
 
-.to-home {
+.to-home-item {
+    position: relative;
+    margin-left: -5px;
+}
+
+.to-home-icon {
+    fill: #ffffff;
+}
+
+.to-home-link {
     text-decoration: none;
+    width: 22px;
+    height: 21px;
+    display: flex;
+    outline: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .to-home-icon:hover {
-    fill: red;
+    fill: #cedce9;
+}
+
+.to-home-link:focus {    
+    outline: 3px solid #83b3d3;
+    border-radius: 4px;
+}
+
+.to-home-link:focus .to-home-icon {
+    fill: #ffffff;
+}
+
+.to-home-link:active .to-home-icon {
+    fill: #9bb9d1;
 }
 
 .choice {
@@ -1027,15 +1056,15 @@ body {
 .footer-social-link-twitter,
 .footer-social-link-facebook,
 .footer-social-link-youtube {
-    position: relative;
+    /*position: relative;*/
     outline: none;
     display: flex;
     width: 28px;
     height: 28px;
     justify-content: center;
     align-items: center;
-    top: -3px;
-    left: 5px;  
+    /*top: -3px;
+    left: 5px;*/
     cursor: pointer;  
 }
 
@@ -1117,7 +1146,7 @@ body {
 
 .htmlacademy-link:focus {
     outline: 3px solid #83b3d3;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .htmlacademy-icon:hover{
