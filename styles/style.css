@@ -834,6 +834,22 @@ body {
     margin-top: 3px;
 }
 
+.hotel-card-image:hover {
+    opacity: 0.6;
+}
+
+.hotel-card-link {
+    outline: none;
+}
+
+.product-card-link:focus .hotel-card-image {
+    outline: 3px solid #83b3d3;
+}
+
+.hotel-card-image:active {
+    opacity: 0.3;
+}
+
 .hotel-card {
     display: flex;
     height: 123px;
@@ -872,23 +888,36 @@ body {
     min-height: 120px;
 }
 
-/*ссылка отеля внутри заголовка*/
-.hotel-link {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 31px;
-    color: #000000;
-    text-decoration: none;
-}
-/*ссылка отеля - подробнее*/
-
 .hotel-card-title {
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
-    color: #000000;
     margin: 0;
 }
+
+/*ссылка отеля - подробнее*/
+.hotel-link {
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+}
+
+.hotel-link:hover {
+    color: #756257;
+}
+
+.hotel-link:focus {
+    outline: 3px solid #83b3d3;
+    border-radius: 7px;
+    margin-left: -12px;
+    padding: 6px 14px 8px 12px;
+}
+
+.hotel-link:active {
+    color: #d6d0cc;
+    outline: none;
+}
+
 
 .hotel-buttons-item:nth-child(3) {
     margin-top: 6px;
@@ -1067,16 +1096,13 @@ body {
 
 .footer-social-link-twitter,
 .footer-social-link-facebook,
-.footer-social-link-youtube {
-    /*position: relative;*/
+.footer-social-link-youtube {    
     outline: none;
     display: flex;
     width: 28px;
     height: 28px;
     justify-content: center;
     align-items: center;
-    /*top: -3px;
-    left: 5px;*/
     cursor: pointer;  
 }
 
@@ -1138,10 +1164,6 @@ body {
 .telephone-number:active {
     color: #d6d0cc;
 }
-
-/*.htmlacademy {
-    position: relative;    
-}*/
 
 .htmlacademy-link {    
     position: relative;
