@@ -640,6 +640,7 @@ body {
     outline: none;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .to-home-icon:hover {
@@ -657,6 +658,17 @@ body {
 
 .to-home-link:active .to-home-icon {
     fill: #9bb9d1;
+}
+
+.nav-arrow {
+    position: relative;
+    left: 8px;
+    top: 8px;
+}
+
+.hotels-link-item {
+    position: relative;
+    left: 18px;
 }
 
 .choice {
