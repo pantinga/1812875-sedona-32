@@ -716,9 +716,9 @@ body {
     background-color: #c3d1e0;
   }
 
-.control-mark:focus { 
-    background-color: red;
-
+.control-mark:focus {
+    background-color: green; 
+    /*box-shadow: 0 0 5px 0 red;*/
     /*background-color: #bdcbdb;
     outline: 3px solid #83b3d3;*/
 }
