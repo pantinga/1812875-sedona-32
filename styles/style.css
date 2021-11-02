@@ -692,16 +692,12 @@ body {
     padding: 0;
 }
 
-
-
-
 .control {
     position: relative;
     display: block;
     padding-left: 36px;
 }
-  
-  
+   
 .control-mark {
     position: absolute;
     top: 2px;
@@ -718,7 +714,7 @@ body {
 
 .control-input[type="checkbox"]:focus + .control-mark {
     background-color: #bdcbdb;
-    outline: 3px solid #83b3d3;*/
+    outline: 3px solid #83b3d3;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
@@ -737,10 +733,26 @@ body {
     background-color: #8296a7;
     outline: none;
 }
-  
+
+.control-radio {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+
+}
+
+
+
 .control-label {
     font-weight: 700;
 }
+
+
+
 
 .choice-btns {
     display: flex;
