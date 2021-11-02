@@ -692,6 +692,49 @@ body {
     padding: 0;
 }
 
+
+
+
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+}
+  
+  
+.control-mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+  }
+
+.control-mark:hover {
+    background-color: #c3d1e0;
+  }
+
+.control-mark:focus { 
+    background-color: red;
+
+    /*background-color: #bdcbdb;
+    outline: 3px solid #83b3d3;*/
+}
+
+.control-mark:active {
+    background-color: #8296a7;
+    outline: none;
+}
+  
+.control-label {
+    font-weight: 700;
+}
+
+  
+
+
 .choice-btns {
     display: flex;
     flex-direction: column;
