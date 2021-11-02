@@ -903,8 +903,8 @@ body {
     opacity: 0.6;
 }
 
-.hotel-card-link {
-    outline: none;
+.product-card-link {
+    outline: 0;
 }
 
 .product-card-link:focus .hotel-card-image {
