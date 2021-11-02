@@ -716,11 +716,21 @@ body {
     background-color: #c3d1e0;
   }
 
-.control-mark:focus {
-    background-color: green; 
-    /*box-shadow: 0 0 5px 0 red;*/
-    /*background-color: #bdcbdb;
+.control-input[type="checkbox"]:focus + .control-mark {
+    background-color: #bdcbdb;
     outline: 3px solid #83b3d3;*/
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url(../img/icons/tick.svg);
+  background-repeat: no-repeat;
+  content: "";
 }
 
 .control-mark:active {
@@ -731,9 +741,6 @@ body {
 .control-label {
     font-weight: 700;
 }
-
-  
-
 
 .choice-btns {
     display: flex;
