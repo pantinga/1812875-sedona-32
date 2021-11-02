@@ -697,7 +697,11 @@ body {
     display: block;
     padding-left: 36px;
 }
-   
+
+.control-label {
+    font-weight: 700;
+}
+
 .control-mark {
     position: absolute;
     top: 2px;
@@ -756,14 +760,39 @@ body {
     background-color: #3f5e72;
     border-radius: 50%;
     content: "";
-  }
-
-.control-label {
-    font-weight: 700;
 }
 
+.range-scale {
+    position: relative;
+    height: 4px;
+    margin-bottom: 16px;
+    background-color: #646b6e;
+    border-radius: 2px;
+}
 
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #ffffff;
+}
 
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+   
+.range-toggle:focus {
+    outline: 3px solid #83b3d3;
+} 
+
+.range-toggle:active {
+    outline: 2px solid #83b3d3;
+}
 
 .choice-btns {
     display: flex;
