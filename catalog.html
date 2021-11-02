@@ -148,15 +148,13 @@
 
         <div class="hotel-show">
           <p class="hotel-find">Найдено гостиниц: <span class="find">38</span></p>
-            <form class="sorting-type">
-              <div class="select">
-                <label class="visually-hidden" for="sorting">Сортировка</label>
-                  <select class="select-control" id="sorting" name="sorting">
-                    <option value="cheap">Сначала дешевые</option>
-                    <option value="expensive">Сначала дорогие</option>
-                  </select>
-                </div>
-              <button class="visually-hidden" type="submit">Отсортировать</button>
+            <form class="sorting-type">              
+              <label class="visually-hidden" for="sorting">Сортировка</label>
+                <select class="select-control" id="sorting" name="sorting">
+                  <option value="cheap">Сначала дешевые</option>
+                  <option value="expensive">Сначала дорогие</option>
+                </select>
+               <button class="visually-hidden" type="submit">Отсортировать</button>
             </form>
           <ul class="btn-show-card">
             <li class="show-cards-item">
@@ -320,7 +318,7 @@
               <a class="pagination-link" href="#">10</a>
             </li>          
           </ul>
-          <div class="quantity-selection">
+          <form class="quantity-selection">
             <label class="on-page" for="quantity">Гостиниц на странице:</label>
             <select class="quantity-choise" id="quantity" name="quantity">
               <option value="1">1</option>
@@ -328,7 +326,7 @@
               <option value="3">3</option>
               <option value="4" selected>4</option>
             </select>
-          </div>
+          </form>
         </div>
       </section>
       
