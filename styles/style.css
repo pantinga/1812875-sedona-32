@@ -762,18 +762,25 @@ body {
     content: "";
 }
 
+.range {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .range-scale {
     position: relative;
     height: 4px;
     margin-bottom: 16px;
     background-color: #646b6e;
-    border-radius: 2px;
+    border-radius: 2px;    
 }
 
 .range-bar {
     position: absolute;
     height: 4px;
     background-color: #ffffff;
+    left: 42px;
+    width: 136px;
 }
 
 .range-toggle {
@@ -792,6 +799,47 @@ body {
 
 .range-toggle:active {
     outline: 2px solid #83b3d3;
+}
+
+.toggle-min {
+    top: -8px;
+    left: -40px;
+}
+  
+.toggle-max {
+    top: -8px;
+    right: 40px;
+}
+
+.range-wrapper-inputs {
+    display: flex;
+    justify-content: center;
+}
+  
+.catalog-filter-label {
+    display: flex;
+    margin-right: 5px;
+    color: #7b797b;
+}
+  
+.catalog-filter-input {
+    width: 30px;
+    padding: 0 2px;
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    appearance: textfield;
+    outline: 2px solid #ffffff;
+    border-radius: 4px;
+    width: 37px;          /*окно с цифрами 0  и 9000*/
+}
+  
+ .catalog-filter-input::-webkit-outer-spin-button,
+ .catalog-filter-input::-webkit-inner-spin-button {
+    appearance: none;
+    margin: 0;
 }
 
 .choice-btns {
