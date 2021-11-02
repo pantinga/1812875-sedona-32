@@ -847,7 +847,7 @@ body {
 .hotel-list {
     margin: 0 72px;
     padding: 0;
-    border-top: 1px solid #e5e5e5;    
+    border-top: 1px solid #e5e5e5;     
 }
 
 .hotel-card-image {
@@ -961,6 +961,7 @@ body {
 }
 
 .hotel-card-button:focus {
+    background-color: #615048;
     outline: 3px solid #83b3d3;
 }
 
@@ -990,15 +991,17 @@ body {
 }
 
 .favouries:focus {
+    background-color: #68a2ca;
     outline: 3px solid #756257;
 }
 
 .favouries:active {
     color: #95beda;
-    outline: none;
+    outline: 1px solid #756257;
+    outline-offset: -1px;  
 }
 
-.green {
+.favouries-green {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -1012,15 +1015,16 @@ body {
     padding: 8px 28px 8px 28px;
 }
 
-.green:hover {
+.favouries-green:hover {
     background-color: #6c9e42;
 }
 
-.green:focus {
+.favouries-green:focus {
+    background-color: #6c9e42;
     outline: 3px solid #756257;
 }
 
-.green:active {
+.favouries-green:active {
     color: #98bb7b;
     outline: none;
 }
@@ -1052,6 +1056,16 @@ body {
     text-align: center;
 }
 
+.show-more-wraper {
+    padding-bottom: 30px;
+    padding-top: 31px;
+    border-bottom: 1px solid #e5e5e5;    
+    margin: 0 72px;   
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
 .show-more {
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
@@ -1061,11 +1075,25 @@ body {
     color: #ffffff;
     background-color: #83b3d3;
     border-radius: 4px;
-    border: 0;
-    margin-left: 288px;
+    border: 0;    
     width: 625px;
     height: 55px;
     cursor: pointer;
+    outline: none;
+}
+
+.show-more:hover {
+    background-color: #68a2ca;
+}
+
+.show-more:focus {
+    background-color: #68a2ca;
+    outline: 3px solid #756257;    
+}
+
+.show-more:active {
+    outline: none;
+    color: #95beda;
 }
 
 .pagination {
@@ -1116,17 +1144,15 @@ body {
     border-radius: 4px;
 }
 
-
 .pagination-link:hover {    
     background-color: #68a2ca;
 }
 
 .pagination-link:focus {
+    background-color: #68a2ca;
     outline: 3px solid #756257;
     border-radius: 4px;
 }
-
-
 
 .pagination-link:active {
     outline: none;
