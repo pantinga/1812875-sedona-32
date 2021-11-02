@@ -717,8 +717,7 @@ body {
     outline: 3px solid #83b3d3;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
   top: 6px;
   left: 4px;
@@ -741,11 +740,23 @@ body {
     background-color: #ffffff;
     width: 20px;
     height: 20px;
-    border-radius: 50px;
-
+    border-radius: 50%;
 }
 
+.control-input[type="radio"]:focus + .control-radio {
+    outline: 3px solid #83b3d3;    
+}
 
+.control-input[type="radio"]:checked + .control-radio::before {        
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3f5e72;
+    border-radius: 50%;
+    content: "";
+  }
 
 .control-label {
     font-weight: 700;
