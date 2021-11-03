@@ -917,6 +917,21 @@ body {
     border-radius: 4px;
     padding: 12px 34px 15px 35px;
     cursor: pointer;
+    outline: none;
+}
+
+.btn-show:hover {
+    background-color: #68a2ca;
+}
+
+.btn-show:focus {
+    background-color: #68a2ca;
+    outline: 3px solid #ffffff;
+}
+
+.btn-show:active {
+    color: #95beda;
+    background-color: #68a2ca;
 }
 
 .btn-reset {
@@ -994,6 +1009,7 @@ body {
     cursor: pointer;    
     padding-left: 13px;
     padding-bottom: 1px;
+    background-color: #ffffff;
 }
 
 .select-control:hover,
@@ -1417,7 +1433,8 @@ body {
     appearance: none;
     cursor: pointer;    
     padding-left: 13px;
-    padding-bottom: 1px;    
+    padding-bottom: 1px;
+    background-color: #ffffff;    
 }
 
 .quantity-choise:hover,
