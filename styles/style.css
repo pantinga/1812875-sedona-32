@@ -769,6 +769,10 @@ body {
     content: "";
 }
 
+.toggle {
+    margin-left: 136px;
+}
+
 .range {
     display: flex;
     flex-direction: column-reverse;
@@ -823,16 +827,20 @@ body {
     justify-content: center;
 }
   
-.catalog-filter-label {
-    display: flex;
-    margin-right: 5px;
+.catalog-filter-label-left {
+    /*display: flex;*/
+    margin-right: -2px;
     color: #7b797b;
+    border: 2px solid #ffffff;
+    border-radius: 4px 0 0 4px;
+    padding-left: 16px;
+    padding-right: 12px;
 }
   
-.catalog-filter-input-left {    
+.zcatalog-filter-input-left {    
     padding: 0;
     font: inherit;
-    text-align: center;
+    /*text-align: center;*/
     color: #ffffff;
     background-color: transparent;
     /*border: none;*/
@@ -842,32 +850,44 @@ body {
     border-radius: 4px 0 0 4px;
     /*border-radius: 4px;*/
     height: 44px;
-
-    width: 20px;          /*окно с цифрами 0  и 9000*/
-   
-    padding-left: 12px;
-    padding-right: 109px;
+    width: 60px;          /*окно с цифрами 0  и 9000*/ 
+    padding-left: 16px;
+    padding-right: 65px;
 }
 
+.catalog-filter-input-left {
+    padding: 0;
+    font: inherit;
+    color: #ffffff;
+    background-color: transparent;
+    appearance: textfield;
+    border: none;
+    height: 44px;
+    width: 96px;
+    padding-left: 1px;
+}
+
+.catalog-filter-label-right {
+    color: #7b797b;
+    border: 2px solid #ffffff;
+    border-radius: 0 4px 4px 0;
+    /*padding-left: 16px;*/
+    padding-right: 12px;
+}
 
 .catalog-filter-input-right {    
     padding: 0;
     font: inherit;
-    text-align: center;
+    
     color: #ffffff;
     background-color: transparent;
-    /*border: none;*/
+    border: none;
     appearance: textfield;
-    /*outline: 2px solid #ffffff;*/
-    border: 2px solid #ffffff;
-    border-radius: 4px 0 0 4px;
-    /*border-radius: 4px;*/
+    
     height: 44px;
-
-    width: 20px;          /*окно с цифрами 0  и 9000*/
-   
-    padding-left: 12px;
-    padding-right: 109px;
+    width: 94px;
+    padding-left: 15px;
+    /*padding-right: 109px;*/
 }
 
   
