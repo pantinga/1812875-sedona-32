@@ -794,8 +794,8 @@ body {
     position: absolute;
     height: 4px;
     background-color: #ffffff;
-    left: 42px;
-    width: 136px;
+    /*left: 42px;*/
+    width: 236px;
 }
 
 .range-toggle {
@@ -818,12 +818,12 @@ body {
 
 .toggle-min {
     top: -8px;
-    left: -40px;
+    /*left: -42px;*/
 }
   
 .toggle-max {
     top: -8px;
-    right: 40px;
+    left: 216px;
 }
 
 .range-wrapper-inputs {
