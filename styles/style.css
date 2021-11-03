@@ -930,16 +930,24 @@ body {
     padding-bottom: 2px;    
     width: 94px;
     outline: none;
+    margin: 0 auto;
+    margin-top: 17px;
+    cursor: pointer;
 }
 
-.btn-reset:hover{}
+.btn-reset:hover {
+    color: #b2b4b4;
+}
 
 .btn-reset:focus{
     outline: 3px solid #83b3d3;
     border-radius: 2px;
 }
 
-.btn-reset:active{}
+.btn-reset:active {
+    outline: 0;
+    color: #7d7b7b;
+}
 
 .control-label {
     font-weight: 400;
