@@ -259,6 +259,7 @@ body {
 .link-logo-small {
     position: absolute;
     margin-left: 460px;
+    outline: none;
 }
 
 .main-index {    
@@ -674,7 +675,7 @@ body {
 .choice {
     display: flex;
     flex-wrap: wrap;
-    padding: 45px 0 0 71px;
+    padding: 45px 0 0 53px;
 }
 
 .catalog-filter-group {
@@ -688,14 +689,20 @@ body {
 }
 
 .catalog-filter-list {
-    margin: 0;
+    /*margin: 0;*/
     padding: 0;
+    margin-top: 23px;
+}
+
+.catalog-filter-item {
+    padding-left: 3px;
+    padding-bottom: 13px;
 }
 
 .control {
     position: relative;
     display: block;
-    padding-left: 36px;
+    padding-left: 40px;
 }
 
 .control-label {
@@ -822,25 +829,60 @@ body {
     color: #7b797b;
 }
   
-.catalog-filter-input {
-    width: 30px;
-    padding: 0 2px;
+.catalog-filter-input-left {    
+    padding: 0;
     font: inherit;
     text-align: center;
     color: #ffffff;
     background-color: transparent;
-    border: none;
+    /*border: none;*/
     appearance: textfield;
-    outline: 2px solid #ffffff;
-    border-radius: 4px;
-    width: 37px;          /*окно с цифрами 0  и 9000*/
+    /*outline: 2px solid #ffffff;*/
+    border: 2px solid #ffffff;
+    border-radius: 4px 0 0 4px;
+    /*border-radius: 4px;*/
+    height: 44px;
+
+    width: 20px;          /*окно с цифрами 0  и 9000*/
+   
+    padding-left: 12px;
+    padding-right: 109px;
 }
+
+
+.catalog-filter-input-right {    
+    padding: 0;
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    background-color: transparent;
+    /*border: none;*/
+    appearance: textfield;
+    /*outline: 2px solid #ffffff;*/
+    border: 2px solid #ffffff;
+    border-radius: 4px 0 0 4px;
+    /*border-radius: 4px;*/
+    height: 44px;
+
+    width: 20px;          /*окно с цифрами 0  и 9000*/
+   
+    padding-left: 12px;
+    padding-right: 109px;
+}
+
   
- .catalog-filter-input::-webkit-outer-spin-button,
- .catalog-filter-input::-webkit-inner-spin-button {
+ .catalog-filter-input-left::-webkit-outer-spin-button,
+ .catalog-filter-input-left::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
 }
+
+.catalog-filter-input-right::-webkit-outer-spin-button,
+.catalog-filter-input-right::-webkit-inner-spin-button {
+   appearance: none;
+   margin: 0;
+}
+
 
 .choice-btns {
     display: flex;
