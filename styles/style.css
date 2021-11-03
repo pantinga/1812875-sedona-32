@@ -776,6 +776,9 @@ body {
 .range {
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
+    top: 29px;
+    left: 2px;
 }
 
 .range-scale {
@@ -783,7 +786,8 @@ body {
     height: 4px;
     margin-bottom: 16px;
     background-color: #646b6e;
-    border-radius: 2px;    
+    border-radius: 2px;
+    top: 28px;    
 }
 
 .range-bar {
@@ -828,7 +832,6 @@ body {
 }
   
 .catalog-filter-label-left {
-    /*display: flex;*/
     margin-right: -2px;
     color: #7b797b;
     border: 2px solid #ffffff;
@@ -840,17 +843,13 @@ body {
 .zcatalog-filter-input-left {    
     padding: 0;
     font: inherit;
-    /*text-align: center;*/
     color: #ffffff;
     background-color: transparent;
-    /*border: none;*/
     appearance: textfield;
-    /*outline: 2px solid #ffffff;*/
     border: 2px solid #ffffff;
     border-radius: 4px 0 0 4px;
-    /*border-radius: 4px;*/
     height: 44px;
-    width: 60px;          /*окно с цифрами 0  и 9000*/ 
+    width: 60px;
     padding-left: 16px;
     padding-right: 65px;
 }
@@ -871,23 +870,19 @@ body {
     color: #7b797b;
     border: 2px solid #ffffff;
     border-radius: 0 4px 4px 0;
-    /*padding-left: 16px;*/
     padding-right: 12px;
 }
 
 .catalog-filter-input-right {    
     padding: 0;
-    font: inherit;
-    
+    font: inherit;    
     color: #ffffff;
     background-color: transparent;
     border: none;
-    appearance: textfield;
-    
+    appearance: textfield;    
     height: 44px;
     width: 94px;
     padding-left: 15px;
-    /*padding-right: 109px;*/
 }
 
   
