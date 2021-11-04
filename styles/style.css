@@ -70,7 +70,8 @@ body {
 .hotel-type,
 .pagination-list,
 .footer-social-links,
-.hotel-buttons {
+.hotel-buttons,
+.favourites-items {
     list-style: none;
 }
 
@@ -1144,7 +1145,7 @@ body {
     line-height: 23px;
     color: #333333;    
     padding: 0;
-    margin-bottom: 35px;
+    /*margin-bottom: 35px;*/
     grid-template-columns: 151px 160px;
     grid-template-rows: 23px 37px;
     column-gap: 8px;
@@ -1625,4 +1626,9 @@ body {
     border-radius: 20px;
     position: absolute;
     top: 42px;
+    left: -180px;
+}
+
+.picture-favourites-items {
+    border-radius: 50%;
 }
