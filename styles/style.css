@@ -1176,6 +1176,9 @@ body {
     color: #000000;
     text-decoration: none;
     outline: none;
+    padding: 0 5px;
+    position: relative;
+    right: 5px;
 }
 
 .hotel-link:hover {
@@ -1184,16 +1187,14 @@ body {
 
 .hotel-link:focus {
     outline: 3px solid #83b3d3;
-    border-radius: 7px;
-    margin-left: -12px;
-    padding: 6px 14px 8px 12px;
+    outline-offset: 7px;
+    border-radius: 1px;
 }
 
 .hotel-link:active {
     color: #d6d0cc;
     outline: none;
 }
-
 
 .hotel-buttons-item:nth-child(3) {
     margin-top: 6px;
