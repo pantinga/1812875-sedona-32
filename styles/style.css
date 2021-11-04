@@ -169,7 +169,7 @@ body {
     align-items: center;
     top: -3px;
     left: 5px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .circle {
@@ -1615,4 +1615,14 @@ body {
 
 .htmlacademy-link:active .htmlacademy-icon { 
     fill: #d6d0cd;
+}
+
+.popover {
+    width: 400px;
+    background-color: #ffffff;
+    min-height: 200px;
+    outline: 1px solid #e5e5e5;
+    border-radius: 20px;
+    position: absolute;
+    top: 42px;
 }
