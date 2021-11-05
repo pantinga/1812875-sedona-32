@@ -1646,15 +1646,16 @@ body {
     padding: 0 0 26px;
 }
 
-.favourites-item {
+.favourite-item {
     display: flex;
     min-height: 48px;
     padding-top: 25px;
     padding-left: 25px;    
 }
 
-.all-favourites {
+.favourite-item-link {
     display: flex;
+    text-decoration: none;
 }
 
 .picture-favourite-item {
@@ -1672,6 +1673,8 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
+    color: #000000;
+    min-width: 130px;
 }
 
 .type-item {
@@ -1681,6 +1684,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #333333;
+    min-width: 130px;
 }
 
 .delete {
@@ -1726,4 +1730,20 @@ body {
     border-radius: 0 0 20px 20px;
     position: relative;
     cursor: pointer;
+    outline: none;
+}
+
+.all-favourites:hover {
+    background-color: #615048;
+}
+
+.all-favourites:focus {
+    background-color: #615048;
+    border: 3px solid #83b3d3;
+}
+
+.all-favourites:active {
+    border: none;
+    background-color: #615048;
+    color:rgba(255, 255, 255, 0.3)
 }
