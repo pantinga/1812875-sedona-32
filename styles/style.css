@@ -1619,7 +1619,7 @@ body {
     fill: #d6d0cd;
 }
 
-.popover {
+.popover-favourites {
     width: 400px;
     background-color: #ffffff;
     min-height: 200px;
@@ -1629,10 +1629,13 @@ body {
     position: absolute;
     top: 42px;
     left: -180px;
+    z-index: 1;
+    background-image: url(..//img/icons/up-arrow.svg);
+    background-repeat: no-repeat;
 }
 
 .favourites-items-list {
-    padding: 0;
+    padding: 0 0 26px;
 }
 
 .favourites-item {
@@ -1654,7 +1657,6 @@ body {
 .name-item {
     margin: 0;
     font-family: inherit;
-    /*font-style: normal;*/
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -1663,7 +1665,6 @@ body {
 .type-item {
     margin: 0;
     font-family: inherit;
-    /*font-style: normal;*/
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -1672,5 +1673,45 @@ body {
 
 .delete {
     background-color: transparent;
-    border: 0;
+    outline: none;
+    border: none;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    bottom: 2px;
+    left: 15px;
+}
+
+.cart {
+    fill: rgba(0, 0, 0, 0.2);
+}
+
+.cart:hover {
+    fill: #000000;
+}
+
+.delete:focus .cart {
+    fill: #000000;
+    outline: 3px solid #83b3d3;
+    outline-offset: 7px;
+    border-radius: 2px;
+}
+
+.cart:active {
+    fill: rgba(0, 0, 0, 0.1);
+}
+
+.all-favourites {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    background-color: #756257;
+    color: #ffffff;
+    width: 400px;
+    height: 60px;
+    border: none;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+    cursor: pointer;
 }
