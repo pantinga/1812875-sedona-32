@@ -1619,8 +1619,7 @@ body {
     fill: #d6d0cd;
 }
 
-.popover-favourites {
-    background-color: #ffffff;
+.popover-favourites {    
     width: 20px;
     height: 10px;
     background-image: url(..//img/icons/up-arrow.svg);
@@ -1652,6 +1651,10 @@ body {
     min-height: 48px;
     padding-top: 25px;
     padding-left: 25px;    
+}
+
+.all-favourites {
+    display: flex;
 }
 
 .picture-favourite-item {
