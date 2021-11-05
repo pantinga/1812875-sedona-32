@@ -1620,7 +1620,7 @@ body {
 }
 
 .open-close-popover {
-    display: none;
+    /*display: none;*/
 }
 
 .popover-favourites {    
