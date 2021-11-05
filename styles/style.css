@@ -71,7 +71,7 @@ body {
 .pagination-list,
 .footer-social-links,
 .hotel-buttons,
-.favourites-items {
+.favourites-item {
     list-style: none;
 }
 
@@ -667,6 +667,7 @@ body {
     position: relative;
     left: -6px;
     top: -1px;
+    fill: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-link-item {
@@ -1623,12 +1624,53 @@ body {
     background-color: #ffffff;
     min-height: 200px;
     outline: 1px solid #e5e5e5;
+    outline-offset: -1px;
     border-radius: 20px;
     position: absolute;
     top: 42px;
     left: -180px;
 }
 
-.picture-favourites-items {
+.favourites-items-list {
+    padding: 0;
+}
+
+.favourites-item {
+    display: flex;
+    min-height: 48px;
+    padding-top: 25px;
+    padding-left: 25px;    
+}
+
+.picture-favourite-item {
     border-radius: 50%;
+}
+
+.item-info {
+    padding-left: 17px;
+    width: 244px;
+}
+
+.name-item {
+    margin: 0;
+    font-family: inherit;
+    /*font-style: normal;*/
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.type-item {
+    margin: 0;
+    font-family: inherit;
+    /*font-style: normal;*/
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+}
+
+.delete {
+    background-color: transparent;
+    border: 0;
 }
