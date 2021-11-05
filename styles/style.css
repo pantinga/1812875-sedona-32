@@ -1619,6 +1619,10 @@ body {
     fill: #d6d0cd;
 }
 
+.open-close-popover {
+    display: none;
+}
+
 .popover-favourites {    
     width: 20px;
     height: 10px;
