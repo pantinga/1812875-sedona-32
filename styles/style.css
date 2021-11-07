@@ -648,8 +648,8 @@ body {
     font-size: 18px;
     line-height: 40px;
     background-color: #f2f2f2;    
-    color: #000000;    
-    width: 416px;
+    color: #000000;
+    width: 398px;
     height: 48px;
     border: 0;
     outline: 0;
@@ -666,35 +666,26 @@ body {
 .field-group-wraper {
     display: grid;
     grid-template-columns: repeat(2, 288px);
-    margin-top: -18px;    
-    margin-bottom: 22px;    
+    margin-top: -18px; 
+    margin-bottom: -2px;   
 }
 
 .cihldren-label {
     padding-left: 57px;
 }
 
-/*.arrival-label {
-    padding-right: 50px;
+.arrival-input,
+.departure-input {
+    background-image: url(..//img/icons/date.svg);
+    background-repeat: no-repeat;
+    background-position: 386px center;
+    padding-left: 20px;
 }
 
-.departure-label {
-    padding-right: 45px;
-}
-
-.people-label {
-    padding-right: 68px;
-}*/
-
-/*.field-group:last-of-type {
-    position: relative;
-    bottom: 68px;
-    left: 394px;
-}*/
-
-.people,
-.children {
+.adult-input,
+.children-input {
     width: 129px;
+    text-align: center;
 }
 
 
@@ -723,18 +714,17 @@ body {
 */
 
 
-.people::-webkit-outer-spin-button,
-.people::-webkit-inner-spin-button {
+.adult-input::-webkit-outer-spin-button,
+.adult-input::-webkit-inner-spin-button {
     appearance: none;
     margin: 0;
 }
 
-.children::-webkit-outer-spin-button,
-.children::-webkit-inner-spin-button {
+.children-input::-webkit-outer-spin-button,
+.children-input::-webkit-inner-spin-button {
    appearance: none;
    margin: 0;
 }
-
 
 .auth-find {
     font-family: inherit;
@@ -779,7 +769,64 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
-  } 
+}
+
+.field-group-range-bar {}
+
+.field-group-button {
+    border: 0;
+    opacity: 0.3;
+    /*outline: 0;*/
+    background-color: transparent;
+    width: 13px;
+    height: 13px;
+}
+
+.minus-button {
+    background-image: url(..//img/icons/minus.svg);
+    /*opacity: 0.3;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    bottom: 61px;
+    left: 174px;
+    cursor: pointer;
+}
+
+.plus-button {
+    background-image: url(..//img/icons/plus.svg);
+    /*opacity: 0.3;*/
+    background-repeat: no-repeat;
+    background-position: center;    
+    position: relative;
+    bottom: 61px;
+    left: 239px;
+}
+
+.minus-button:hover,
+.plus-button:hover {
+    opacity: 1;
+}
+
+.minus-button:focus,
+.plus-button:focus {
+    opacity: 1;
+    outline: 3px solid #83b3d3;
+    outline-offset: 3px;
+    border-radius: 1px;
+}
+
+.minus-button:active,
+.plus-button:active {
+    opacity: 0.2;
+    outline: none;
+}
+
+
+
+
+
+
 
 .catalog-form-bg {
     background-image: url(../img/photos/catalog-background.jpg);

@@ -179,21 +179,37 @@
           <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group">
               <label class="auth-form-label arrival-label" for="arrival-date">Дата заезда:</label>
-              <input class="auth-form-field arrival" id="arrival-date" type="text" placeholder="27 апреля 2020" name="arrival-date">
+              <input class="auth-form-field arrival-input" id="arrival-date" type="text" placeholder="27 апреля 2020" name="arrival-date">
             </p>
             <p class="field-group">
               <label class="auth-form-label departure-label" for="departure-date">Дата выезда:</label>
-              <input class="auth-form-field departure" id="departure-date" type="text" placeholder="1 сентября 2021" name="departure-date">
+              <input class="auth-form-field departure-input" id="departure-date" type="text" placeholder="1 сентября 2021" name="departure-date">
             </p>
             <div class="field-group-wraper">
             <p class="field-group">
-              <label class="auth-form-label people-label" for="quantity-people">Взрослые:</label>
-              <input class="auth-form-field people" id="quantity-people" type="number" value="2" name="quantity-people">
+              <label class="auth-form-label adult-label" for="quantity-adult">Взрослые:</label>
+              <input class="auth-form-field adult-input" id="quantity-adult" type="number" value="2" name="quantity-adult">
             </p>
             <p class="field-group">
               <label class="auth-form-label cihldren-label" for="quantity-children">Дети:</label>
-              <input class="auth-form-field children" id="quantity-children" type="number" value="1" name="quantity-children">            
+              <input class="auth-form-field children-input" id="quantity-children" type="number" value="1" name="quantity-children">                          
             </p>
+            <div class="field-group-range-bar-">
+              <button class="field-group-button minus-button" type="button">
+                <span class="visually-hidden">убавить количество взрослых</span>
+              </button>
+              <button class="field-group-button plus-button" type="button">
+                <span class="visually-hidden">прибавить количество взрослых</span>
+              </button>
+            </div>
+            <div class="field-group-range-bar">
+              <button class="field-group-button minus-button" type="button">
+                <span class="visually-hidden">убавить количество детей</span>
+              </button>
+              <button class="field-group-button plus-button" type="button">
+                <span class="visually-hidden">прибавить количество детей</span>
+              </button>
+            </div>
           </div>          
 
             <!--div class="range">
