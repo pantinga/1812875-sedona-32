@@ -9,6 +9,7 @@
 
 <!--Шапка-->
 
+    <div class="shadow">
     <header class="main-header container">
       <nav class="navigation">
         <ul class="navigation-main-list">        
@@ -32,12 +33,47 @@
           
           <li class="navigation-item-search">
             <a class="navigation-link-search" href="#">
-              <svg class="navigation-icon" width="18" height="18" viewBox="0 0 18 18"><path d="M18 16.5l-3.7-3.7A8 8 0 0 0 8-.1C3.6-.1 0 3.6 0 8a8 8 0 0 0 12.9 6.3l3.7 3.7 1.4-1.5zM8 14a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6z"/></svg><span class="visually-hidden">Поиск</span></a>
+              <svg class="navigation-icon" width="18" height="18" viewBox="0 0 18 18"><path d="M18 16.5l-3.7-3.7A8 8 0 0 0 8-.1C3.6-.1 0 3.6 0 8a8 8 0 0 0 12.9 6.3l3.7 3.7 1.4-1.5zM8 14a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6z"/></svg><span class="visually-hidden">Поиск</span>
+            </a>
           </li>
 
           <li class="navigation-item-favourites">            
             <a class="navigation-link-favourites" href="#">
-              <svg class="navigation-icon" width="18" height="17" viewBox="0 0 18 17"><path d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0z"/></svg><div class="circle"><div class="number">12</div></div><span class="visually-hidden">Избранное</span></a>
+              <svg class="navigation-icon" width="18" height="17" viewBox="0 0 18 17"><path d="M8.9 17a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3zm-6-9.5L9 14.4l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0z"/></svg><div class="circle"><div class="number">12</div></div><span class="visually-hidden">Избранное</span>            
+            </a>
+            <div class="popover-content open-close-popover">                          
+              <h2 class="popover-favourites-title visually-hidden">Избранное</h2>            
+              <ul class="favourites-items-list">                 
+                <li class="favourite-item">
+                  <a class="favourite-item-link" href="#">
+                  <img class="picture-favourite-item" src="img/logos/logo-desert-quail-inn.jpg" width="48" height="48" alt="Маленькое изображение мотелья Desert Quail Inn">
+                  <div class="item-info">
+                    <p class="name-item">Desert Quail Inn</p>
+                    <p class="type-item">Мотель</p>
+                  </div>
+                  </a>
+                  <button class="delete">
+                    <svg class="cart" width="16" height="16" viewBox="0 0 16 16"><path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5zm-2.8 12.5H3.4V3.4h9.1v11.4zM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6zM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6z"/></svg>
+                  </button>                  
+                </li>
+                <li class="favourite-item">
+                  <a class="favourite-item-link" href="#">
+                  <img class="picture-favourites-items" src="img/logos/logo-villas-at-poco-diablo.jpg" width="48" height="48" alt="Маленькое изображение апартаментов Villas at Poco Diablo">
+                  <div class="item-info">
+                    <p class="name-item">Villas at Poco Diablo</p>
+                    <p class="type-item">Апартаменты</p>
+                  </div>
+                  </a>
+                  <button class="delete">
+                    <svg class="cart" width="16" height="16" viewBox="0 0 16 16"><path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5zm-2.8 12.5H3.4V3.4h9.1v11.4zM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6zM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6z"/></svg>
+                  </button>
+                </li>
+              </ul>
+              <button class="all-favourites" type="button">Все избранные</button>
+              <span class="tringle-white">              
+              </span>
+            </div>
+
           </li>
           
           <li class="navigation-item-want">
@@ -169,9 +205,10 @@
       </div>  
     </footer>
 
-    <div class="modal-container">
-      <div class="modal modal-auth">        
+    <div class="modal-container modal-close">
+      <div class="modal">        
         <button class="modal-close-button">
+          <svg class="modal-close-icon" width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2L11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2z" /></svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -209,50 +246,27 @@
               <button class="field-group-button plus-button" type="button">
                 <span class="visually-hidden">прибавить количество детей</span>
               </button>
-              <bottom class="info" type="button">                
+              <button class="info" type="button">                
                 <span class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </bottom>
+              </button>
             </div>
             
-          </div>          
-
-            <!--div class="range">
-              <div class="range-scale">
-                <div class="range-bar">
-                  <button class="range-toggle toggle-min" type="button">
-                    <span class="visually-hidden">минимальная цена</span>
-                  </button>
-                  <button class="range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">максимальная цена</span>
-                  </button>
-                </div>
-              </div>
-
-              <div class="range-wrapper-inputs">
-                <label class="catalog-filter-label-left">
-                  <input class="catalog-filter-input-left" type="number" value="0" name="min-price">от
-                </label>
-                <label class="catalog-filter-label-right">
-                  <input class="catalog-filter-input-right" type="number" value="9000" name="max-price">до                    
-                </label>
-              </div>
-            </div-->
-
-
-
-
+          </div>
 
             <button class="auth-find" type="submit">Найти</button>
 
           </form>
           
         </section>
-        <p class="advertisment">
+        <div class="advertisment">
           Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.              
-        </p>
+          <span class="tringle">            
+          </span>
+        </div>
 
       </div>
     </div>
+  </div>
 
   </body>
 </html>

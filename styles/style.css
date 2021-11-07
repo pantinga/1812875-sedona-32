@@ -47,6 +47,10 @@ body {
     overflow: hidden;
 }
 
+.shadow {
+    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
+}
+
 .main-header {
     color: #000000;
     font-weight: 700;
@@ -602,7 +606,6 @@ body {
     left: 0;
     display: flex;
     width: 100%;
-    /*height: 100%;*/
     background-color: rgba(242, 242, 242, 0.8);
 }
 
@@ -613,10 +616,6 @@ body {
     background-color: #FFFFFF;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
     border-radius: 30px;
-}
-
-.modal-auth {
-    width: 575px;    
 }
 
 .modal-title {    
@@ -680,6 +679,27 @@ body {
     background-repeat: no-repeat;
     background-position: 386px center;
     padding-left: 20px;
+    background-color: #f2f2f2;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.arrival-input:hover,
+.departure-input:hover {
+    background-color: #e6e6e6;
+}
+
+.arrival-input:focus,
+.departure-input:focus {
+    background-color: #e6e6e6;
+    outline: 3px solid #83b3d3;
+}
+
+.arrival-input:active,
+.departure-input:active {
+    background-color: #ffffff;
+    color: #000000;
+    outline: 2px solid #000000;
+    outline-offset: -2px;
 }
 
 .adult-input,
@@ -687,32 +707,6 @@ body {
     width: 129px;
     text-align: center;
 }
-
-
-/*
-.catalog-filter-label-left {
-    margin-right: -2px;
-    color: rgba(255, 255, 255, 0.3);    
-    border: 2px solid #ffffff;
-    border-radius: 4px 0 0 4px;
-    padding-left: 16px;
-    padding-right: 12px;
-}
-
-.catalog-filter-input-left {
-    padding: 0;
-    font: inherit;
-    color: #ffffff;
-    background-color: transparent;
-    appearance: textfield;
-    border: none;
-    height: 44px;
-    width: 96px;
-    padding-left: 1px;
-    outline: none;
-}
-*/
-
 
 .adult-input::-webkit-outer-spin-button,
 .adult-input::-webkit-inner-spin-button {
@@ -756,6 +750,10 @@ body {
     color: #95beda;
 }
 
+.modal-close {
+    display: none;
+}
+
 .modal-close-button {
     position: absolute;
     padding: 0;
@@ -763,20 +761,31 @@ body {
     right: 70px;
     width: 53px;
     height: 53px;
-    background-color: transparent;
+    background-color: #f2f2f2;
     border: none;
-    background-image: url(..//img/icons/close-modal.svg);
-    background-repeat: no-repeat;
-    background-position: center;
     cursor: pointer;
+    border-radius: 50%;
 }
 
-.field-group-range-bar {}
+.modal-close-button:hover {
+    background-color: #e5e5e5;
+}
+
+.modal-close-button:focus {
+    background-color: #e5e5e5;
+    outline: 3px solid #83b3d3;    
+}
+
+.modal-close-button:active {
+    
+    background-color: #e5e5e5;
+    fill: rgba(0, 0, 0, 0.3);
+    outline: 0;
+}
 
 .field-group-button {
     border: 0;
     opacity: 0.3;
-    /*outline: 0;*/
     background-color: transparent;
     width: 13px;
     height: 13px;
@@ -784,7 +793,6 @@ body {
 
 .minus-button {
     background-image: url(..//img/icons/minus.svg);
-    /*opacity: 0.3;*/
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
@@ -795,7 +803,6 @@ body {
 
 .plus-button {
     background-image: url(..//img/icons/plus.svg);
-    /*opacity: 0.3;*/
     background-repeat: no-repeat;
     background-position: center;    
     position: relative;
@@ -833,6 +840,7 @@ body {
     position: absolute;
     bottom: 181px;
     right: 220px;
+    border: none;
 }
 
 .info:hover {
@@ -851,12 +859,20 @@ body {
     border-radius: 10px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
     position: absolute;
-    bottom: 7px;
+    bottom: 23px;
     right: 105px;
 }
 
-
-
+.tringle {
+    width: 19px;
+    height: 9px;
+    background-image: url(..//img/icons/tringle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;    
+    top: -9px;
+    left: 120px;
+}
 
 .catalog-form-bg {
     background-image: url(../img/photos/catalog-background.jpg);
@@ -1407,7 +1423,6 @@ body {
     line-height: 23px;
     color: #333333;    
     padding: 0;
-    /*margin-bottom: 35px;*/
     grid-template-columns: 151px 160px;
     grid-template-rows: 23px 37px;
     column-gap: 8px;
@@ -1881,7 +1896,7 @@ body {
 }
 
 .open-close-popover {
-    /*display: none;*/
+    display: none;
 }
 
 .popover-favourites {    
@@ -1902,8 +1917,8 @@ body {
     outline-offset: -1px;
     border-radius: 20px;
     position: absolute;    
-    top: 9px;
-    left: -188px;
+    top: 42px;
+    left: -179px;
     z-index: 1;
 }
 
@@ -2011,4 +2026,15 @@ body {
     border: none;
     background-color: #615048;
     color:rgba(255, 255, 255, 0.3)
+}
+
+.tringle-white {
+    width: 19px;
+    height: 11px;
+    background-image: url(..//img/icons/tringle-white.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    top: -9px;
+    left: 189px;
 }
