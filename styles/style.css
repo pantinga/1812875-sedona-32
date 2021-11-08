@@ -638,7 +638,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 40px;
-    color: #000000;
+    color: #000000;    
 }
 
 .auth-form-field {    
@@ -706,6 +706,7 @@ body {
 .children-input {
     width: 129px;
     text-align: center;
+    appearance: textfield;
 }
 
 .adult-input::-webkit-outer-spin-button,
@@ -798,7 +799,7 @@ body {
     position: relative;
     bottom: 61px;
     left: 174px;
-    cursor: pointer;
+    cursor: pointer;  
 }
 
 .plus-button {
@@ -808,6 +809,7 @@ body {
     position: relative;
     bottom: 61px;
     left: 239px;
+    cursor: pointer;
 }
 
 .minus-button:hover,
@@ -1157,12 +1159,14 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
-.catalog-filter-input-left:focus {
-    box-shadow: inset 0 0 0 2px #81b3d2;
+.catalog-filter-label-left:focus-within {
     outline: 2px solid #81b3d2;
+    box-shadow: inset 0 0 0 2px #81b3d2; 
 }
 
-.catalog-filter-label-left:active {    
+.catalog-filter-label-left:active {
+    box-shadow: none;
+    outline: none;    
     background-color: #756257;
     border: 2px solid #ffffff;    
 }
@@ -1178,12 +1182,14 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
-.catalog-filter-label-right:focus {
-    box-shadow: inset 0 0 0 2px #81b3d2;
+.catalog-filter-label-right:focus-within {
     outline: 2px solid #81b3d2;
+    box-shadow: inset 0 0 0 2px #81b3d2; 
 }
 
-.catalog-filter-label-right:active {    
+.catalog-filter-label-right:active {
+    box-shadow: none;
+    outline: none;      
     background-color: #756257;
     border: 2px solid #ffffff;    
 }
@@ -1918,7 +1924,7 @@ body {
 }
 
 .open-close-popover {
-    /*display: none;*/
+    display: none;
 }
 
 .popover-favourites {    
