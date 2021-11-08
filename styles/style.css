@@ -863,6 +863,28 @@ body {
     right: 105px;
 }
 
+.arrival-date-info {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ff5757;
+    position: absolute;
+    top: 215px;
+    right: 209px;
+}
+
+.departure-date-info {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333333;
+    position: absolute;
+    top: 305px;
+    right: 157px;
+}
+
+
+
 .tringle {
     width: 19px;
     height: 9px;
@@ -1896,7 +1918,7 @@ body {
 }
 
 .open-close-popover {
-    display: none;
+    /*display: none;*/
 }
 
 .popover-favourites {    
@@ -1936,6 +1958,23 @@ body {
 .favourite-item-link {
     display: flex;
     text-decoration: none;
+    outline: none;
+    margin-right: auto;
+}
+
+.favourite-item-link:hover {
+    opacity: 0.6;
+}
+
+.favourite-item-link:focus {
+    outline: 3px solid #83b3d3;
+    outline-offset: 7px;
+    border-radius: 5px;
+}
+
+.favourite-item-link:active {
+    outline: none;
+    opacity: 0.3;
 }
 
 .picture-favourite-item {
@@ -1944,7 +1983,8 @@ body {
 
 .item-info {
     padding-left: 17px;
-    width: 244px;
+    /*width: 244px;*/
+    min-width: 125px;
 }
 
 .name-item {
@@ -1954,7 +1994,7 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #000000;
-    min-width: 130px;
+    /*min-width: 125px;*/
 }
 
 .type-item {
@@ -1964,7 +2004,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #333333;
-    min-width: 130px;
+    /*min-width: 125px;*/
 }
 
 .delete {
@@ -1975,7 +2015,7 @@ body {
     height: 36px;
     position: relative;
     bottom: 2px;
-    left: 15px;
+    left: -15px;
 }
 
 .cart {
@@ -1993,7 +2033,8 @@ body {
     border-radius: 2px;
 }
 
-.cart:active {
+.delete:active .cart {
+    outline: none;
     fill: rgba(0, 0, 0, 0.1);
 }
 

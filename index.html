@@ -217,7 +217,9 @@
             <p class="field-group">
               <label class="auth-form-label arrival-label" for="arrival-date">Дата заезда:</label>
               <input class="auth-form-field arrival-input" id="arrival-date" type="text" placeholder="27 апреля 2020" name="arrival-date">
+              
             </p>
+           
             <p class="field-group">
               <label class="auth-form-label departure-label" for="departure-date">Дата выезда:</label>
               <input class="auth-form-field departure-input" id="departure-date" type="text" placeholder="1 сентября 2021" name="departure-date">
@@ -231,7 +233,7 @@
               <label class="auth-form-label cihldren-label" for="quantity-children">Дети:</label>
               <input class="auth-form-field children-input" id="quantity-children" type="number" value="1" name="quantity-children">                          
             </p>
-            <div class="field-group-range-bar-">
+            <div class="field-group-range-bar">
               <button class="field-group-button minus-button" type="button">
                 <span class="visually-hidden">убавить количество взрослых</span>
               </button>
@@ -250,11 +252,14 @@
                 <span class="visually-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </button>
             </div>
-            
           </div>
-
-            <button class="auth-find" type="submit">Найти</button>
-
+          <button class="auth-find" type="submit">Найти</button>
+          <span class="arrival-date-info">
+            Мы не можем отправить вас в прошлое.
+          </span>
+          <span class="departure-date-info">
+            На эти даты есть свободные номера. Пока есть.
+          </span>
           </form>
           
         </section>
