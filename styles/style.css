@@ -811,8 +811,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    bottom: 42px;
-    left: 174px;
+    bottom: 43px;
+    left: 173px;
     cursor: pointer;  
 }
 
@@ -821,8 +821,8 @@ body {
     background-repeat: no-repeat;
     background-position: center;    
     position: relative;
-    bottom: 42px;
-    left: 239px;
+    bottom: 43px;
+    left: 237px;
     cursor: pointer;
 }
 
@@ -855,7 +855,7 @@ body {
     background-position: center;
     position: absolute;
     bottom: 181px;
-    right: 220px;
+    right: 222px;
     border: none;
 }
 
