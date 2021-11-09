@@ -229,22 +229,38 @@
                 На эти даты есть свободные номера. Пока есть.
               </span>
             </p>
+
+
             <div class="field-group-wraper">
             <p class="field-group">
               <label class="auth-form-label adult-label" for="quantity-adult">Взрослые:</label>
               <input class="auth-form-field adult-input" id="quantity-adult" type="number" value="2" name="quantity-adult">
+              <span class="buttons-plus-minus-adult">
+                <button class="field-group-button minus-button" type="button">
+                  <span class="visually-hidden">убавить количество взрослых</span>
+                </button>
+                <button class="field-group-button plus-button" type="button">
+                  <span class="visually-hidden">прибавить количество взрослых</span>
+                </button>
+              </span>
+              
             </p>
             <p class="field-group">
               <label class="auth-form-label cihldren-label" for="quantity-children">Дети:</label>
               <input class="auth-form-field children-input" id="quantity-children" type="number" value="1" name="quantity-children">                          
             </p>
+
+
             <div class="field-group-range-bar">
-              <button class="field-group-button minus-button" type="button">
+
+
+
+              <!--button class="field-group-button minus-button" type="button">
                 <span class="visually-hidden">убавить количество взрослых</span>
               </button>
               <button class="field-group-button plus-button" type="button">
                 <span class="visually-hidden">прибавить количество взрослых</span>
-              </button>
+              </button-->
             </div>
             <div class="field-group-range-bar">
               <button class="field-group-button minus-button" type="button">
@@ -263,14 +279,7 @@
             </div>
           </div>
           <button class="auth-find" type="submit">Найти</button>
-          <!--span class="arrival-date-info">
-            Мы не можем отправить вас в прошлое.
-          </span>
-          <span class="departure-date-info">
-            На эти даты есть свободные номера. Пока есть.
-          </span-->
-          </form>
-          
+          </form>          
         </section>
         
 
