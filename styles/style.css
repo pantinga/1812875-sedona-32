@@ -47,10 +47,6 @@ body {
     overflow: hidden;
 }
 
-.shadow {
-    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
-}
-
 .main-header {
     color: #000000;
     font-weight: 700;
@@ -762,7 +758,7 @@ body {
 }
 
 .modal-close {
-    /*display: none;*/
+    display: none;
 }
 
 .modal-close-button {
