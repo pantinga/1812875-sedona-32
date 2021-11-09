@@ -606,12 +606,13 @@ body {
     left: 0;
     display: flex;
     width: 100%;
+    height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal {
     position: relative;
-    margin: 250px auto;
+    margin: auto;
     padding: 62px 70px 70px;
     background-color: #FFFFFF;
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
@@ -626,6 +627,7 @@ body {
     text-transform: uppercase;
     color: #000000;
     margin: 0;
+    margin-left: -2px;
 }
 
 .auth-form {
@@ -637,7 +639,7 @@ body {
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 48px;
     color: #000000;    
 }
 
@@ -654,7 +656,6 @@ body {
     outline: 0;
     border-radius: 4px;
 }
-
 
 .field-group {
     display: flex;
@@ -679,7 +680,6 @@ body {
     background-repeat: no-repeat;
     background-position: 386px center;
     padding-left: 20px;
-    background-color: #f2f2f2;
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -752,20 +752,23 @@ body {
 }
 
 .modal-close {
-    display: none;
+    /*display: none;*/
 }
 
 .modal-close-button {
     position: absolute;
-    padding: 0;
     top: 54px;
     right: 70px;
     width: 53px;
     height: 53px;
-    background-color: #f2f2f2;
+    background-color: #f2f2f2;    
     border: none;
     cursor: pointer;
     border-radius: 50%;
+}
+
+.modal-close-icon {
+    padding-top: 4px;
 }
 
 .modal-close-button:hover {
@@ -777,10 +780,11 @@ body {
     outline: 3px solid #83b3d3;    
 }
 
-.modal-close-button:active {
-    
+.modal-close-button:active {    
     background-color: #e5e5e5;
     fill: rgba(0, 0, 0, 0.3);
+    background-image: opacity 0.3;
+    
     outline: 0;
 }
 
@@ -845,6 +849,10 @@ body {
     border: none;
 }
 
+.info:hover .advertisment {
+    display: block;
+}
+
 .info:hover {
     background-color: #68a2ca;
 }
@@ -861,8 +869,9 @@ body {
     border-radius: 10px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
     position: absolute;
-    bottom: 23px;
-    right: 105px;
+    top: 40px;
+    right: -115px;
+    display: none;
 }
 
 .arrival-date-info {
@@ -884,8 +893,6 @@ body {
     top: 305px;
     right: 157px;
 }
-
-
 
 .tringle {
     width: 19px;
