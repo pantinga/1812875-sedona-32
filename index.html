@@ -217,12 +217,17 @@
             <p class="field-group">
               <label class="auth-form-label arrival-label" for="arrival-date">Дата заезда:</label>
               <input class="auth-form-field arrival-input" id="arrival-date" type="text" placeholder="27 апреля 2020" name="arrival-date">
-              
+              <span class="arrival-date-info">
+                Мы не можем отправить вас в прошлое.
+              </span>              
             </p>
            
             <p class="field-group">
               <label class="auth-form-label departure-label" for="departure-date">Дата выезда:</label>
               <input class="auth-form-field departure-input" id="departure-date" type="text" placeholder="1 сентября 2021" name="departure-date">
+              <span class="departure-date-info">
+                На эти даты есть свободные номера. Пока есть.
+              </span>
             </p>
             <div class="field-group-wraper">
             <p class="field-group">
@@ -258,12 +263,12 @@
             </div>
           </div>
           <button class="auth-find" type="submit">Найти</button>
-          <span class="arrival-date-info">
+          <!--span class="arrival-date-info">
             Мы не можем отправить вас в прошлое.
           </span>
           <span class="departure-date-info">
             На эти даты есть свободные номера. Пока есть.
-          </span>
+          </span-->
           </form>
           
         </section>

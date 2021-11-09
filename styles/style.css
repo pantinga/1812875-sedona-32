@@ -627,12 +627,14 @@ body {
     text-transform: uppercase;
     color: #000000;
     margin: 0;
-    margin-left: -2px;
+    position: relative;
+    bottom: 2px;
+    right: 2px;
 }
 
 .auth-form {
     width: 575px;
-    padding-top: 21px;
+    padding-top: 20px;
 }
 
 .auth-form-label {
@@ -647,7 +649,7 @@ body {
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 48px;
     background-color: #f2f2f2;    
     color: #000000;
     width: 398px;
@@ -659,15 +661,18 @@ body {
 
 .field-group {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 22px;
+    margin: 0;
+    padding-top: 19px;
 }
 
 .field-group-wraper {
     display: grid;
-    grid-template-columns: repeat(2, 288px);
-    margin-top: -18px; 
-    margin-bottom: -2px;   
+    grid-template-columns: 288px 286px;
+    margin: 0;
+    /*margin-top: -18px; 
+    margin-bottom: -2px;*/
 }
 
 .cihldren-label {
@@ -879,9 +884,9 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #ff5757;
-    position: absolute;
-    top: 215px;
-    right: 209px;
+    position: relative;
+    top: 3px;
+    left: 155px;
 }
 
 .departure-date-info {
@@ -889,9 +894,9 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #333333;
-    position: absolute;
-    top: 305px;
-    right: 157px;
+    position: relative;
+    top: 3px;
+    left: 155px;
 }
 
 .tringle {
