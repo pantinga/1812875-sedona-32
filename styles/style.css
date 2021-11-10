@@ -496,7 +496,7 @@ body {
     display: flex;
     flex-direction: column;  
     align-items: center;
-    min-height: 411px;
+    min-height: 450px;
 }
 
 .subscription-info {
@@ -505,7 +505,7 @@ body {
     line-height: 26px;
     width: 720px;
     min-height: 72px;
-    margin: 0 0 26px 0;
+    margin: 0 0 27px 0;
 }
 
 .subscription-bg {
@@ -532,7 +532,7 @@ body {
     text-transform: uppercase;
     width: 720px;
     height: 50px;
-    margin: 91px 0 15px 0;
+    margin: 87px 0 16px 0;
 }
 
 .subscription-field {    
@@ -545,7 +545,7 @@ body {
     border-radius: 10px 0 0 10px;
     border: 0;
     padding-left: 22px;
-    width: 600px;
+    width: 580px;
 }
 
 .subscription-field:hover {
@@ -1476,6 +1476,10 @@ body {
     row-gap: 31px;
 }
 
+.hotel-price {
+    margin-left: -1.5px;
+}
+
 .rating {
     margin-left: auto;
 }
@@ -1711,7 +1715,7 @@ body {
 .pagination-list {    
     display: grid;
     grid-template-columns: repeat(6, 55px);
-    column-gap: 7.5px;
+    column-gap: 7.75px;
     padding: 0;
     margin: 0;    
 }
@@ -1827,10 +1831,10 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    margin-left: 72px;
-    padding-top: 49px;
+    margin-left: 76px;
+    padding-top: 43px;
     flex-wrap: wrap;
-    width: 168px;   
+    width: 165px;   
 }
 
 .footer-social-item-twitter {
