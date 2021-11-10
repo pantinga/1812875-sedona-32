@@ -36,12 +36,6 @@ body {
     box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
 }
 
-.container {    
-    /*width: 1200px;*/
-    /*margin: 0 auto;*/
-    /*box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);*/
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -342,7 +336,7 @@ body {
 }
 
 .advantages-item-white {
-    background-color: rgb(131, 179, 211);
+    background-color: #83b3d3;
     color: #ffffff;
     flex-direction: column;
     width: 400px;
