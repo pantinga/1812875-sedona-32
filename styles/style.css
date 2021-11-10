@@ -493,6 +493,10 @@ body {
     min-height: 411px;
 }
 
+.subscription-bottom {
+    padding-bottom: 39px;
+}
+
 .subscription-info {
     font-weight: 400;
     font-size: 22px;
@@ -1249,8 +1253,7 @@ body {
     background-color: #83b3d3;
     color: #ffffff;
     border: 0;
-    border-radius: 4px;
-    /*padding: 12px 34px 15px 35px;*/
+    border-radius: 4px;    
     padding: 13px 35px 14px 35px;
     cursor: pointer;
     outline: none;
