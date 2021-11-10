@@ -142,7 +142,7 @@ body {
 
 .navigation-link-current::before {
     position: absolute;
-    right: 8px;
+    right: 7px;
     bottom: -20px;
     left: 9px;
     background-color: #756257;
@@ -297,7 +297,7 @@ body {
     color: #000000;
     width: 720px;
     height: 80px;
-    margin: 63px 0 23px 0;
+    margin: 61px 0 25px;
 }
 
 .advantages-text {
@@ -350,7 +350,7 @@ body {
 .advantages-item-white .advantages-title-info,
 .advantages-item-light .advantages-title-info,
 .advantages-item-dark .advantages-title-info {
-    margin: 98px 0 25px 0;
+    margin: 97px 0 29px 0;
 }
 
 .list-info .advantages-title-info,
@@ -367,7 +367,7 @@ body {
 
 .advantages-item-white .advantages-description {
     width: 220px;
-    margin: 26px 0 0 90px;
+    margin: 30px 0 0 90px;
 }
 
 .advantages-item-home .advantages-description,
@@ -380,7 +380,7 @@ body {
 .advantages-item-light .advantages-description,
 .advantages-item-dark .advantages-description {
     width: 250px;
-    margin: 26px 0 0 75px;
+    margin: 29px 0 0 75px;
 }
 
 .list-info {
@@ -444,7 +444,7 @@ body {
     text-transform: uppercase;
     color: #000000;
     width: 720px;
-    margin: 91px 0 15px 0;
+    margin: 88px 0 16px 0;
     height: 50px;
 }
 
@@ -453,7 +453,7 @@ body {
     font-size: 22px;
     line-height: 26px;
     width: 720px;
-    margin: 0 0 73px 0;
+    margin: 0 0 74px 0;
     height: 37px;  
 }
 
@@ -466,7 +466,7 @@ body {
     color: #ffffff;
     text-decoration: none;
     background-color: #756257;
-    border-radius: 4px;
+    border-radius: 10px;
     margin-bottom: 91px;
 }
 
@@ -493,8 +493,12 @@ body {
     min-height: 411px;
 }
 
-.subscription-bottom {
-    padding-bottom: 39px;
+.subscription-catalog {
+    text-align: center;    
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    min-height: 450px;
 }
 
 .subscription-info {
@@ -530,7 +534,7 @@ body {
     text-transform: uppercase;
     width: 720px;
     height: 50px;
-    margin: 87px 0 16px 0;
+    margin: 92px 0 16px 0;
 }
 
 .subscription-field {    
