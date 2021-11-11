@@ -1932,6 +1932,12 @@ body {
     color: #d6d0cc;
 }
 
+.htmlacademy {
+    width: 155px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .htmlacademy-link {    
     position: relative;
     outline: none;
