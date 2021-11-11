@@ -2003,7 +2003,7 @@ body {
     position: absolute;
     top: -9px;
     left: 189px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .favourites-items-list {
