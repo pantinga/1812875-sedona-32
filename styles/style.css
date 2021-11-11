@@ -919,12 +919,13 @@ body {
     left: 155px;
 }
 
-.tringle {
-    width: 19px;
-    height: 9px;
+.tringle::after {
+    content: "";
+    width: 20px;
+    height: 10px;
     background-image: url(..//img/icons/tringle.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: contain;
     position: absolute;    
     top: -9px;
     left: 120px;
