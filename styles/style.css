@@ -460,7 +460,8 @@ body {
     line-height: 26px;
     width: 720px;
     margin: 0 0 74px 0;
-    height: 37px;  
+    height: 37px;
+    padding-right: 15px; 
 }
 
 .catalog-hotel-link {
@@ -1979,7 +1980,7 @@ body {
     outline-offset: -1px;
     border-radius: 20px;
     position: absolute;    
-    top: 42px;
+    top: 41px;
     left: -179px;
     z-index: 1;
 }
@@ -1997,7 +1998,7 @@ body {
 }
 
 .favourites-items-list {
-    padding: 0 0 42px;
+    padding: 0 0 41px;
 }
 
 .favourite-item {
@@ -2043,7 +2044,7 @@ body {
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 25px;
     color: #000000;
 }
 
@@ -2052,7 +2053,7 @@ body {
     font-family: inherit;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 17px;
     color: #333333;
 }
 
@@ -2099,7 +2100,7 @@ body {
     position: relative;
     cursor: pointer;
     outline: none;
-    padding: 21px 140.5px 19px;
+    padding: 19px 140.5px 21px;
     text-decoration: none;
 }
 
