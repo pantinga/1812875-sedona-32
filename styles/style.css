@@ -33,8 +33,14 @@ body {
 .shadow {
     width: 1200px;
     margin: 0 auto;
-    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);
+    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);    
 }
+
+/*.container {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);        
+}*/
 
 .visually-hidden {
     position: absolute;
@@ -1952,7 +1958,7 @@ body {
 }
 
 .open-close-popover {
-    display: none;
+    /*display: none;*/
 }
 
 .popover-favourites {    
@@ -1976,6 +1982,18 @@ body {
     top: 42px;
     left: -179px;
     z-index: 1;
+}
+
+.tringle-white::after {
+    width: 19px;
+    height: 11px;
+    background-image: url(..//img/icons/tringle-white.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    top: -9px;
+    left: 189px;
+    z-index: 2;
 }
 
 .favourites-items-list {
@@ -2017,7 +2035,6 @@ body {
 
 .item-info {
     padding-left: 17px;
-    /*width: 244px;*/
     min-width: 125px;
 }
 
@@ -2028,7 +2045,6 @@ body {
     font-size: 18px;
     line-height: 22px;
     color: #000000;
-    /*min-width: 125px;*/
 }
 
 .type-item {
@@ -2038,7 +2054,6 @@ body {
     font-size: 16px;
     line-height: 20px;
     color: #333333;
-    /*min-width: 125px;*/
 }
 
 .delete {
@@ -2050,6 +2065,7 @@ body {
     position: relative;
     bottom: 2px;
     left: -15px;
+    cursor: pointer;
 }
 
 .cart {
@@ -2100,15 +2116,4 @@ body {
     outline: none;
     background-color: #615048;
     color:rgba(255, 255, 255, 0.3)
-}
-
-.tringle-white {
-    width: 19px;
-    height: 11px;
-    background-image: url(..//img/icons/tringle-white.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    position: absolute;
-    top: -9px;
-    left: 189px;
 }
