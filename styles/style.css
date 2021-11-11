@@ -144,7 +144,7 @@ body {
 .navigation-link-current::before {
     position: absolute;
     right: 7px;
-    bottom: -20px;
+    bottom: -15px;
     left: 9px;
     background-color: #756257;
     height: 2px;
@@ -222,13 +222,13 @@ body {
 .navigation-item-favourites {
     position: relative;
     top: 3px;
-    right: 32px;
+    right: 33px;
 }
 
 .navigation-item-search {
     position: relative;
-    top: 3px;
-    right: 43px;
+    top: 4px;
+    right: 44px;
 }
 
 .navigation-link-want {
@@ -237,10 +237,12 @@ body {
     line-height: 21px;
     text-transform: uppercase;
     color: #ffffff;
-    padding: 8px 35px 9px 34px;
+    padding: 8px 34px 9px 34px;
     border-radius: 4px;
     background-color: #756257;
     text-decoration: none;
+    display: block;
+    margin-top: -5px;
 }
 
 .navigation-link-want:hover {
@@ -514,7 +516,8 @@ body {
 
 .subscription-bg {
     background-image: url(../img/photos/blur-background.jpg);
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
+    background-size: cover;    
 }
 
 .subscription-bg .subscription-head,
@@ -1461,8 +1464,8 @@ body {
 
 .hotel-card {
     display: flex;
-    height: 122px;
-    padding: 28px 0 30px 0;
+    min-height: 122px;
+    padding: 28px 0 25px 0;
     border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1477,8 +1480,7 @@ body {
     line-height: 23px;
     color: #333333;    
     padding: 0;
-    grid-template-columns: 151px 160px;
-    grid-template-rows: 23px 37px;
+    grid-template-columns: 151px 160px;    
     column-gap: 8px;
     row-gap: 31px;
 }
@@ -1536,10 +1538,6 @@ body {
     outline: none;
 }
 
-.hotel-buttons-item:nth-child(3) {
-    margin-top: 6px;
-}
-
 .hotel-card-button {
     font-weight: 700;
     font-size: 16px;
@@ -1547,10 +1545,11 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #756257;
-    padding: 8px 32px 9px 31px;
+    padding: 8px 32px 8px 31px;
     border-radius: 4px;
     text-decoration: none;
     outline: none;
+    display: block;
 }
 
 .hotel-card-button:hover {
@@ -2009,7 +2008,7 @@ body {
 }
 
 .favourites-items-list {
-    padding: 0 0 41px;
+    padding: 0 0 26px;
 }
 
 .favourite-item {
@@ -2113,6 +2112,7 @@ body {
     outline: none;
     padding: 19px 140.5px 21px;
     text-decoration: none;
+    display: block;
 }
 
 .all-favourites:hover {
