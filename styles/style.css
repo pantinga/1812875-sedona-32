@@ -540,7 +540,14 @@ body {
     line-height: 36px;
     text-transform: uppercase;
     width: 720px;
-    height: 50px;
+    height: 50px;    
+}
+
+.catalog-indent {
+    margin: 87px 0 16px 0;
+}
+
+.main-page-indent {
     margin: 92px 0 16px 0;
 }
 
@@ -746,7 +753,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
     background-color: #83b3d3;
-    border-radius: 4px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     outline: none;
@@ -1986,15 +1993,17 @@ body {
 }
 
 .tringle-white::after {
-    width: 19px;
-    height: 11px;
-    background-image: url(..//img/icons/tringle-white.svg);
+    content: "";
+    width: 20px;
+    height: 10px;
+    background-image: url(..//img/icons/white-tringle.svg);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: bottom;
     position: absolute;
     top: -9px;
     left: 189px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .favourites-items-list {
