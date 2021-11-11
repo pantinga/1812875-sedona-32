@@ -1993,7 +1993,7 @@ body {
     position: absolute;
     top: -9px;
     left: 189px;
-    z-index: 2;
+    z-index: 0;
 }
 
 .favourites-items-list {
