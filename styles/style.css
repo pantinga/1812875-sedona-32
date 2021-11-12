@@ -34,7 +34,7 @@ body {
 .shadow {
     width: 1200px;
     margin: 0 auto;
-    box-shadow: -15px 0 15px -15px rgba(0, 0, 0, 0.2), 15px 0 15px -15px rgba(0, 0, 0, 0.2);    
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);    
 }
 
 .visually-hidden {
