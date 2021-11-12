@@ -288,6 +288,7 @@ body {
 .advantages-info {
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
@@ -299,7 +300,7 @@ body {
     text-transform: uppercase;
     color: #000000;
     width: 720px;
-    height: 80px;
+    min-height: 80px;
     margin: 61px 0 25px;
 }
 
@@ -308,7 +309,7 @@ body {
     font-size: 22px;
     line-height: 36px;  
     width: 720px;
-    height: 37px;
+    min-height: 37px;
     margin: 0 0 79px 0;
 }
 
@@ -447,8 +448,8 @@ body {
     text-transform: uppercase;
     color: #000000;
     width: 720px;
-    margin: 88px 0 16px 0;
-    height: 50px;
+    margin: 88px 0 1px 0;
+    min-height: 50px;
 }
 
 .hotel-text {
@@ -456,8 +457,8 @@ body {
     font-size: 22px;
     line-height: 26px;
     width: 720px;
-    margin: 0 0 74px 0;
-    height: 37px;
+    margin: 15px 0 59px 0;
+    min-height: 37px;
     padding-right: 15px; 
 }
 
@@ -957,6 +958,7 @@ body {
     line-height: 21px;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     padding-left: 73px;
 }
 
