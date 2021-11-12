@@ -1329,8 +1329,9 @@ body {
 
 .hotel-show {
     display: flex;
+    flex-wrap: wrap;
     width: 1057px;
-    padding: 46px 0 44px 71px;
+    padding: 46px 0 32px 71px;
 }
 
 .hotel-find {
@@ -1347,10 +1348,6 @@ body {
     flex-grow: 1;
 }
 
-.sorting-type {
-    padding-right: 85px;
-}
-
 .select-control {    
     font: inherit;
     border: 0;
@@ -1358,14 +1355,14 @@ body {
     border-radius: 4px;
     color: #333333;
     height: 44px;
-    width: 283px;
+    min-width: 283px;
     background-image: url(../img/icons/arrow-down-grey.svg);
     background-repeat: no-repeat;
     background-position: 252px 19px;
     appearance: none;
     cursor: pointer;    
     padding-left: 17px;
-    padding-bottom: 1px;
+    padding-bottom: 3px;
     background-color: #ffffff;
 }
 
@@ -1384,30 +1381,19 @@ body {
 
 .btn-show-card {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
-    padding: 0;       
+    padding: 0;
+    margin-left: auto;   
+    width: 224px;
+    justify-content: flex-end;
+    margin-right: 2px;    
 }
 
-.show-cards-item {
-    background-image: url(../img/icons/mode-cards.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.show-item:not(:last-of-type) {    
     margin-right: 12px;
+    margin-bottom: 12px;
 }
-
-.show-single-card-item {
-    background-image: url(../img/icons/mode-slideshow.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 12px;
-}
-
-.show-list-item {
-    background-image: url(../img/icons/mode-list.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 
 .show-cards-link,
 .show-single-card-link,
@@ -1418,6 +1404,25 @@ body {
     outline: 2px solid #e5e5e5;
     border-radius: 4px;    
 }
+
+.show-cards-link {
+    background-image: url(../img/icons/mode-cards.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.show-single-card-link {
+    background-image: url(../img/icons/mode-slideshow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.show-list-link {
+    background-image: url(../img/icons/mode-list.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 .show-list-link {
     outline: 2px solid #000000;
