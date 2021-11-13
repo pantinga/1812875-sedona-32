@@ -276,6 +276,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 485px;
+  background-color: #000000;
 }
 
 .logo-sedona {
@@ -519,6 +520,7 @@ body {
   background-image: url("../img/photos/blur-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #000000;
 }
 
 .subscription-bg .subscription-head,
@@ -934,6 +936,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 408px;
+  background-color: #000000;
 }
 
 .hotels,
