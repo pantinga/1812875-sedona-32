@@ -474,6 +474,8 @@ body {
   background-color: #756257;
   border-radius: 10px;
   margin-bottom: 91px;
+  margin-left: 312px;
+  margin-right: 312px;
 }
 
 .catalog-hotel-link:hover {
@@ -532,6 +534,7 @@ body {
   display: flex;
   width: 800px;
   min-height: 60px;
+  margin-bottom: 94px;
 }
 
 .subscription-head {
@@ -1911,9 +1914,10 @@ body {
 }
 
 .telephone {
-  min-width: 720px;
+  width: 688px;
   text-align: center;
   padding-top: 37px;
+  padding-left: 15px;
 }
 
 .telephone-number {
@@ -1942,22 +1946,18 @@ body {
 }
 
 .htmlacademy {
-  width: 155px;
-  display: flex;
-  flex-wrap: wrap;
+  padding-left: 49px;
+  padding-top: 27px;
 }
 
 .htmlacademy-link {
-  position: relative;
   outline: none;
   display: flex;
-  width: 154px;
-  height: 64px;
+  min-height: 33px;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  left: 33px;
-  top: 26px;
+  padding: 15px 19px 16px 20px;
 }
 
 .htmlacademy-link:focus {
