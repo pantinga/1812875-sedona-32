@@ -372,20 +372,20 @@ body {
 
 .advantages-item-white .advantages-description {
   width: 220px;
-  margin: 30px 0 0 90px;
+  margin: 30px 0 77px 90px;
 }
 
 .advantages-item-home .advantages-description,
 .advantages-item-burger .advantages-description,
 .advantages-item-souvenir .advantages-description {
   width: 250px;
-  margin: 20px 0 0 75px;
+  margin: 20px 0 79px 75px;
 }
 
 .advantages-item-light .advantages-description,
 .advantages-item-dark .advantages-description {
   width: 250px;
-  margin: 29px 0 0 75px;
+  margin: 29px 0 77px 75px;
 }
 
 .list-info {
@@ -1578,6 +1578,8 @@ body {
   border-radius: 4px;
   padding: 8px 30px 8px 30px;
   cursor: pointer;
+  display: block;
+  text-decoration: none;
 }
 
 .favouries:hover {
@@ -1609,6 +1611,8 @@ body {
   cursor: pointer;
   background-color: #7db54e;
   padding: 8px 28px 8px 28px;
+  display: block;
+  text-decoration: none;
 }
 
 .favouries-green:hover {
@@ -1692,9 +1696,12 @@ body {
   border-radius: 4px;
   border: 0;
   width: 625px;
-  min-height: 55px;
+  min-height: 40px;
   cursor: pointer;
   outline: none;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .show-more:hover {
