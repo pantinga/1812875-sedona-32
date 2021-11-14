@@ -80,6 +80,7 @@ body {
   display: flex;
   margin-left: 71px;
   margin-right: 72px;
+  background-color: #ffffff;
 }
 
 .navigation-main-list {
@@ -88,20 +89,26 @@ body {
   width: 460px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 18px;
+  background-color: #ffffff;
 }
 
 .navigation-item-main {
+  padding-top: 18px;
+  padding-bottom: 7px;
   position: relative;
   left: -9px;
 }
 
 .navigation-item-about {
+  padding-top: 18px;
+  padding-bottom: 7px;
   position: relative;
   left: 6px;
 }
 
 .navigation-item-catalog {
+  padding-top: 18px;
+  padding-bottom: 7px;
   position: relative;
   left: 22px;
 }
@@ -157,7 +164,7 @@ body {
   max-width: 400px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 18px;
+  background-color: #ffffff;
 }
 
 .navigation-link-search,
@@ -173,6 +180,7 @@ body {
   left: 5px;
   cursor: pointer;
 }
+
 
 .circle {
   font-size: 10px;
@@ -220,15 +228,17 @@ body {
 }
 
 .navigation-item-favourites {
-  position: relative;
-  top: 3px;
-  right: 33px;
+  padding-top: 21px;
+  padding-left: 11px;
 }
 
 .navigation-item-search {
-  position: relative;
-  top: 4px;
-  right: 44px;
+  padding-top: 22px;
+}
+
+.navigation-item-want {
+  padding-top: 18px;
+  padding-left: 33px;
 }
 
 .navigation-link-want {
