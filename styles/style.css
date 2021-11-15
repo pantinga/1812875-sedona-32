@@ -1356,7 +1356,8 @@ body {
   line-height: 39px;
   text-transform: uppercase;
   color: #000000;
-  margin: 2px 194px 0 0;
+  margin: 2px 191px 0 0;
+  width: 340px;
 }
 
 .main-catalog {
