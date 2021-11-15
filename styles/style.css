@@ -1372,7 +1372,7 @@ body {
   border-radius: 4px;
   color: #333333;
   height: 44px;
-  min-width: 283px;
+  width: 283px;
   background-image: url("../img/icons/arrow-down-grey.svg");
   background-repeat: no-repeat;
   background-position: 252px 19px;
