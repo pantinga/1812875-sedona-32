@@ -1382,6 +1382,7 @@ body {
   padding-bottom: 3px;
   background-color: #ffffff;
   line-height: 23px;
+  margin-bottom: 12px;
 }
 
 .select-control:hover,
@@ -1401,7 +1402,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0;  
+  padding: 0;
   justify-content: flex-end;
   margin-right: 2px;
 }
