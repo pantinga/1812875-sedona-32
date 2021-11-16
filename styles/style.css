@@ -661,6 +661,7 @@ body {
   color: #000000;
   margin: 0;
   margin-left: -3px;
+  width: 420px;
 }
 
 .auth-form {
@@ -705,13 +706,23 @@ body {
   margin: 0;
 }
 
+.arrival-label {
+  width: 100px;
+}
+
+.departure-label {
+  width: 110px;
+}
+
 .adult-label {
   padding-right: 43px;
+  width: 100px;
 }
 
 .children-label {
   padding-left: 57px;
   padding-right: 50px;
+  width: 45px;
 }
 
 .arrival-input,
@@ -774,7 +785,7 @@ body {
   cursor: pointer;
   outline: none;
   width: 575px;
-  height: 60px;
+  min-height: 60px;
   margin-top: 16px;
 }
 
@@ -922,6 +933,7 @@ body {
   position: relative;
   top: 3px;
   left: 155px;
+  width: 450px;
 }
 
 .departure-date-info {
@@ -932,6 +944,7 @@ body {
   position: relative;
   top: 3px;
   left: 155px;
+  width: 450px;
 }
 
 .tringle::after {
