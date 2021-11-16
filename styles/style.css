@@ -933,7 +933,7 @@ body {
   position: relative;
   top: 3px;
   left: 155px;
-  width: 450px;
+  width: 420px;
 }
 
 .departure-date-info {
@@ -944,7 +944,7 @@ body {
   position: relative;
   top: 3px;
   left: 155px;
-  width: 450px;
+  width: 420px;
 }
 
 .tringle::after {
