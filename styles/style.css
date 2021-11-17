@@ -1221,6 +1221,7 @@ body {
 
 .catalog-filter-input-left::placeholder {
   color: #ffffff;
+  opacity: 1;
 }
 
 .catalog-filter-label-left {
@@ -1267,6 +1268,7 @@ body {
 
 .catalog-filter-input-right::placeholder {
   color: #ffffff;
+  opacity: 1;
 }
 
 .catalog-filter-input-right:hover {
